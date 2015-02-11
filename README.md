@@ -1,3 +1,5 @@
 # project1-3300
 
-## maybe we cound keep comments and posts here so that we have only one thing to check
+## Maybe we cound keep comments, ideas and other things in here. Only one thing to check.
+
+- If you watch this repo you'll get notified of any updates. 
