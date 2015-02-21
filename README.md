@@ -4,6 +4,5 @@
 
 - If you `watch` this repo you'll get notified of any updates. 
 - I have created the framework. Colors and styling will be added.
-- 
 
 
