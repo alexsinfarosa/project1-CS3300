@@ -1,4 +1,4 @@
-# project1-3300
+# Project1-3300
 
 ## Maybe we cound keep comments, ideas and other things in here. In this way we will have only one thing to check and update.
 
