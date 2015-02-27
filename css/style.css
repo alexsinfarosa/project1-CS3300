@@ -2014,4 +2014,7 @@ p {
   color: #fafafa;
   font-size: 1rem; }
 
+svg {
+  border: 1px solid #fff; }
+
 /*-----  End of Theme  ------*/

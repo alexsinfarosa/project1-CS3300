@@ -1,13 +1,65 @@
-// CIRCLE
-var diameter = 960,
-    radius = diameter / 2,
-    innerRadius = radius - 120;
+// Histogram
 
-var cluster = d3.layout.cluster()
-    .size([360, innerRadius])
-    .sort(null)
-    .value(function(d) {
-        return d.size;
-    });
+// Defining variables
+var margin = {
+        top: 20,
+        right: 30,
+        bottom: 30,
+        left: 40
+    },
+    width = 500 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom,
+    dataset;
 
-var bundle = d3.layout.bundle();
+
+// Create scale functions
+var xScale = d3.scale.ordinal()
+    .rangeRoundBands([margin.left, width - margin.right], 0.1);
+
+var yScale = d3.scale.linear()
+    .range([height - margin.top, margin.bottom]);
+
+// Axis
+var xAxis = d3.svg.axis()
+    .scale(xScale)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(yScale)
+    .orient("left")
+    .ticks(10, "%");
+
+// Create the SVG and the g group
+var svg = d3.select("#histogram")
+    .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+// Load and parse data
+d3.json('dataset.json', function(err, data) {
+    dataset = data;
+
+    var users = [];
+    dataset.forEach(function(d, i) {users.push()});
+
+    xScale.domain(dataset.map(function(d) {
+        return d.name;
+    }));
+    yScale.domain([0, d3.max(dataset, function(d) {
+        return d.value;
+    })]);
+
+    // svg.selectAll("rect")
+    //     .data(dataset)
+    //     .enter()
+    //     .append("rect")
+    //     .attr("width", function(d, i) {
+    //         return
+    //     })
+    //     .attr("height", function(d, i) {
+    //         return
+    //     })
+
+});
