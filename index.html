@@ -1,75 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Project 1</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Project 1">
+    <head>
+        <meta charset="UTF-8">
+        <title>Project 1</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Project 1">
 
-    <!-- Mobile Specific Meta -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
 
-    <!-- D3 -->
-    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <!-- D3 -->
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
-    <!-- Custom Style Sheet -->
-    <link rel="stylesheet" href="css/style.css">
+        <!-- Custom Style Sheet -->
+        <link rel="stylesheet" href="css/style.css">
 
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <main class="container-fluid">
-        <div class="row">
-            <div class="col-lg-5">
+        <main class="container-fluid">
+            <div class="row">
+                <div class="col-lg-5">
 
-                <!-- TITLE -->
-                <h1>Satellite data visualization</h1>
-                <h6>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna.
-				</h6>
+                    <!-- TITLE -->
+                    <h1>Satellite data visualization</h1>
+                    <h6>
+    					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    					tempor incididunt ut labore et dolore magna.
+    				</h6>
 
-                <h3>Bla bla bla...</h3>
-
-
-                <!-- HISTOGRAM GOES HERE -->
-                <svg width="500" height="400">
-                    <line x1="50" y1="200" x2="50" y2="250" stroke="#EEE" stroke-width="1" />
-                    <line x1="50" y1="250" x2="350" y2="250" stroke="#EEE" stroke-width="1" />
-                </svg>
-
-                <!-- TOTAL -->
-                <h2>TOTAL: 103,249,897...</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, id?</p>
+                    <h3>Bla bla bla...</h3>
 
 
-                <!-- ACKNOWLEDGEMENTS -->
+                    <!-- HISTOGRAM GOES HERE -->
+                    <svg width="500" height="400">
+                        <line x1="50" y1="200" x2="50" y2="250" stroke="#EEE" stroke-width="1" />
+                        <line x1="50" y1="250" x2="350" y2="250" stroke="#EEE" stroke-width="1" />
+                    </svg>
+
+                    <!-- TOTAL -->
+                    <h2>TOTAL: 103,249,897...</h2>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, id?</p>
+
+
+                    <!-- ACKNOWLEDGEMENTS -->
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="col-lg-9">
+                        <script type="text/javascript">
+                            var dataset = [1,2,3];
+                            d3.select(".col-lg-9").selectAll("p")
+                                .data(dataset)
+                                .enter()
+                                .append("p")
+                                .text(function(d) { return d; });
+                        </script>
+                    </div>
+                    <div class="col-lg-3">
+                        <script type="text/javascript">
+                            var dataset = [1,2,3,4,5,6,7,8,9];
+                            d3.select(".col-lg-3").selectAll("p")
+                                .data(dataset)
+                                .enter()
+                                .append("p")
+                                .text(function(d) { return d; });
+                        </script>
+                    </div>
+                    
+
+                </div>
+                <!-- end col-lg-4 RIGHT SIDE -->
+
             </div>
-
-            <div class="col-lg-7 text-center">
-            <!-- CIRCLE VISUALIZATION -->
-                <svg width="800" height="800">
-                    <circle cx="400" cy="400" r="300" stroke-width="3" stroke="black" fill="none" />
-                </svg>
-
+            <!-- end col-lg-1 LEFT SIDE -->
             </div>
-            <!-- end col-lg-4 RIGHT SIDE -->
-
-        </div>
-        <!-- end col-lg-1 LEFT SIDE -->
-        </div>
-        <!-- end row -->
-    </main>
+            <!-- end row -->
+        </main>
 
 
 
@@ -78,11 +95,11 @@
 
 
 
-    <!-- JQuery -->
-    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <!-- JQuery -->
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-    <!-- MAIN -->
-    <script src="js/scripts.js"></script>
-</body>
+        <!-- MAIN -->
+        <script src="js/scripts.js"></script>
+    </body>
 
 </html>
