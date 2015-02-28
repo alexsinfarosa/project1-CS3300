@@ -74,7 +74,16 @@ d3.json('dataset.json', function(err, data) {
 ==============================*/
 
 
-// The circle javascript code goes here. Select the circle by its id. Everything would be displayed in that div
+// The circle javascript code goes here. Select the circle by its id. 
+// Everything would be displayed in that div. Something like this:
+
+var w = 600,
+    h = 600;
+
+var svg = d3.select("#circle")
+        .append("svg")
+        .attr("width", w)
+        .attr("height", h);
 
 
 
