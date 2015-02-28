@@ -1,5 +1,6 @@
-// Histogram
-
+/*=================================
+=            HISTOGRAM            =
+=================================*/
 // Defining variables
 var margin = {
         top: 20,
@@ -19,7 +20,7 @@ var xScale = d3.scale.ordinal()
 var yScale = d3.scale.linear()
     .range([height - margin.top, margin.bottom]);
 
-// Axis
+// Axes
 var xAxis = d3.svg.axis()
     .scale(xScale)
     .orient("bottom");
@@ -63,3 +64,27 @@ d3.json('dataset.json', function(err, data) {
     //     })
 
 });
+
+
+/*-----  End of HISTOGRAM  ------*/
+
+
+/*==============================
+=            CIRCLE            =
+==============================*/
+
+
+// The circle javascript code goes here. Select the circle by its id. Everything would be displayed in that div
+
+
+
+/*-----  End of CIRCLE  ------*/
+
+
+
+
+
+
+
+
+
