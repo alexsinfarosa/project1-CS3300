@@ -512,14 +512,13 @@
   {
     "country":"Mexico",
     "operator":"Satellites Mexicanos S.A. de C.V. (SatMex; Loral Global Alliance)",
-    "users":"Commecial",
-    "purpose":"Communications"
+    "users":"Commercial",    "purpose":"Communications"
   },
   {
     "country":"Luxembourg",
     "operator":"SES (Société Européenne des Satellites (SES))",
     "users":"Commercial",
-    "purpose":"Communicatins"
+    "purpose":"Communications"
   },
   {
     "country":"International",
@@ -3224,13 +3223,13 @@
   {
     "country":"Russia/USA",
     "operator":"Dauria Aerospace",
-    "users":"Commerical",
+    "users":"Commercial",
     "purpose":"Communications/Remote Sensing"
   },
   {
     "country":"ESA",
     "operator":"European Space Agency",
-    "users":"Commerical",
+    "users":"Commercial",
     "purpose":"Navigation/Global Positioning"
   },
   {
@@ -5390,7 +5389,7 @@
   {
     "country":"USA",
     "operator":"Naval Post-Graduate School",
-    "users":"Governmnet",
+    "users":"Government",
     "purpose":"Technology Development"
   },
   {

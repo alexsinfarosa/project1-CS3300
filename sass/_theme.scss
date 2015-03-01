@@ -48,13 +48,38 @@ p {
 	font-size: 1rem;
 }
 
+.margin-bottom {
+	margin-bottom: $general-margin;
+}
+
 svg {
-	border: 1px solid #fff;
+	// border: 1px solid #fff;
 }
 
 #circle {
-	background: orange;
+	// background: orange;
 }
+
+.text {
+	font-size: 12px;
+	fill: white;
+	font-weight: bold;
+}
+
+.axis text {
+  font-family: $font-1;
+  fill: #fff;
+  font-size: 11px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+
 
 /*-----  End of Theme  ------*/
 

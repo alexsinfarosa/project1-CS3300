@@ -20,9 +20,6 @@
     <!-- D3 -->
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
-    <!-- JS -->
-    <script src="js/scripts.js"></script>
-
     <!-- Custom Style Sheet -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -41,105 +38,34 @@
                     tempor incididunt ut labore et dolore magna.
                 </h6>
 
-                <h3>Bla bla bla...</h3>
+                <h3 class="margin-bottom">Bla bla bla...</h3>
 
 
                 <!-- HISTOGRAM -->
-                <div id="histogram">
-                    <script>
-                    var margin = {
-                            top: 20,
-                            right: 30,
-                            bottom: 30,
-                            left: 40
-                        },
-                        width = 500 - margin.left - margin.right,
-                        height = 400 - margin.top - margin.bottom,
-                        dataset;
-
-
-                    // Create scale functions
-                    var xScale = d3.scale.ordinal()
-                        .rangeRoundBands([margin.left, width - margin.right], 0.1);
-
-                    var yScale = d3.scale.linear()
-                        .range([height - margin.top, margin.bottom]);
-
-                    // Axes
-                    var xAxis = d3.svg.axis()
-                        .scale(xScale)
-                        .orient("bottom");
-
-                    var yAxis = d3.svg.axis()
-                        .scale(yScale)
-                        .orient("left")
-                        .ticks(10, "%");
-
-                    // Create the SVG and the g group
-                    var svg = d3.select("#histogram")
-                        .append("svg")
-                        .attr("width", width + margin.left + margin.right)
-                        .attr("height", height + margin.top + margin.bottom)
-                        .append("g")
-                        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-                    // Load and parse data
-                    d3.json('dataset.json', function(err, data) {
-                        dataset = data;
-
-                        var users = [];
-                        dataset.forEach(function(d, i) {
-                            users.push()
-                        });
-
-                        xScale.domain(dataset.map(function(d) {
-                            return d.name;
-                        }));
-                        yScale.domain([0, d3.max(dataset, function(d) {
-                            return d.value;
-                        })]);
-
-                        // svg.selectAll("rect")
-                        //     .data(dataset)
-                        //     .enter()
-                        //     .append("rect")
-                        //     .attr("width", function(d, i) {
-                        //         return
-                        //     })
-                        //     .attr("height", function(d, i) {
-                        //         return
-                        //     })
-
-                    });
-                    </script>
-
-                </div> <!-- end histogram --> 
+                <div id="histogram"></div>
 
                 <!-- TOTAL -->
-                <h2>TOTAL: 103,249,897...</h2>
+                <h2>TOTAL: 1235 satellites in orbit</h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, id?</p>
 
-            </div>  <!-- end col-lg-5 -->
+            </div>
+            <!-- end col-lg-5 -->
 
             <!-- CIRCLE -->
             <div class="col-lg-7">
-                <div id="circle" class="text-center">
-                    <script>
-                    var w = 700,
-                        h = 750;
-
-                    var svg = d3.select("#circle")
-                        .append("svg")
-                        .attr("width", w)
-                        .attr("height", h);
-                    </script>
-                </div> <!-- end circle --> 
-            </div> <!-- end col-lg-7 --> 
+                <div id="circle" class="text-center"></div>
+            </div>
+            <!-- end col-lg-7 -->
 
         </div>
+        <!-- end col-lg-5 -->
         </div>
+        <!-- end row -->
     </main>
+
+    <!-- JS -->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

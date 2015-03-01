@@ -1,0 +1,83 @@
+var width = 500,
+                        height = 500,
+                        padding = 20,
+                        barPadding = 5,
+                        dataset;
+
+                    // Load and parse data
+                    d3.json("dataset.json", function(err, data) {
+                        dataset = data;
+
+                        // Create array of "users" only
+                        var users = dataset.map(function(i) {
+                            return i.users;
+                        });
+
+                        // Create a count for each users.value
+                        var civil = 0;
+                        var commercial = 0;
+                        var military = 0;
+                        var government = 0;
+                        users.forEach(function(user, index) {
+                            if (user == "Civil") {
+                                civil++;
+                            } else if (user == "Commercial") {
+                                commercial++;
+                            } else if (user == "Government") {
+                                government++;
+                            } else if (user == "Military") {
+                                military++;
+                            }
+                        });
+
+                        // Create the array to generate the bars
+                        var arrUsers = [civil, commercial, government, military];
+
+                        // Scales
+               
+
+                        // Create the SVG
+                        var svg = d3.select("#histogram")
+                            .append("svg")
+                            .attr("width", width)
+                            .attr("height", height);
+
+                        // Create the bars
+                        svg.selectAll("rect")
+                            .data(arrUsers)
+                            .enter()
+                            .append("rect")
+                            .attr("x", function(d, i) {
+                                return i * width/arrUsers.length;
+                            })
+                            .attr("y", function(d) {
+                                return height - d;
+                            })
+                            .attr("width", width / arrUsers.length - barPadding)
+                            .attr("height", function(d) {
+                                return d;
+                            })
+                            .attr("fill", "orange");
+
+                        // Labels
+                        svg.selectAll("text")
+                            .data(arrUsers)
+                            .enter()
+                            .append("text")
+                            .attr("class", "text")
+                            .text(function(d) {
+                                return d;
+                            })
+                            .attr("x", function(d, i) {
+                                return i * (width / arrUsers.length);
+                            })
+                            .attr("y", function(d) {
+                                return height - d;
+                            })
+                            .attr("text-anchor", "middle")
+                            .attr("x", function(d, i) {
+                                return i * (width / arrUsers.length) + (width / arrUsers.length - barPadding) / 2;
+                            })
+                            .attr("y", function(d) {
+                                return height - d + 20;
+                            });

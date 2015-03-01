@@ -8,37 +8,6 @@
 /* =Positioning */
 /* =Color text */
 /*-----  End of variables  ------*/
-.bg-azzurro,
-.bg-rosso,
-.bg-verde,
-.bg-giallo,
-.bg-chiaro,
-.bg-scuro {
-  border-radius: 15px;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  border: 1px solid #fafafa; }
-
-.bg-rosso {
-  background: #FF5E3E; }
-
-.bg-verde {
-  background: #8BC43F; }
-
-.bg-azzurro {
-  background: #6BC4E2; }
-
-.bg-giallo {
-  background: #FFDE3D; }
-
-.bg-chiaro {
-  background: #FAFAFA;
-  border: none; }
-
-.bg-scuro {
-  background: #222;
-  border: none; }
-
 /* =bootstrap (GRID ONLY) */
 /*!
  * Bootstrap v3.3.2 (http://getbootstrap.com)
@@ -2014,10 +1983,23 @@ p {
   color: #fafafa;
   font-size: 1rem; }
 
-svg {
-  border: 1px solid #fff; }
+.margin-bottom {
+  margin-bottom: 61.2px; }
 
-#circle {
-  background: orange; }
+.text {
+  font-size: 12px;
+  fill: white;
+  font-weight: bold; }
+
+.axis text {
+  font-family: "Open Sans", sans-serif;
+  fill: #fff;
+  font-size: 11px; }
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #fff;
+  shape-rendering: crispEdges; }
 
 /*-----  End of Theme  ------*/
