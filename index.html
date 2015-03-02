@@ -26,46 +26,31 @@
 </head>
 
 <body>
-
-    <main class="container-fluid">
+    <main class="container">
         <div class="row">
-            <div class="col-lg-5">
-
+            <section class="col-sm-5">
                 <!-- TITLE -->
                 <h1>Satellite data visualization</h1>
-                <h6>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna.
-                </h6>
+                <h6>Each line represent the connection between the country operating the satellite and its purpose.</h6>
 
-                <h3 class="margin-bottom">Bla bla bla...</h3>
-
+                <h3 class="margin-bottom">Satellites</h3>
 
                 <!-- HISTOGRAM -->
                 <div id="histogram"></div>
 
                 <!-- TOTAL -->
-                <h2>TOTAL: 1235 satellites in orbit</h2>
+                <h2>TOTAL: <span class="total">1235 satellites in orbit</span></h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, id?</p>
-
-            </div>
-            <!-- end col-lg-5 -->
+            </section> <!-- end col-sm-5 -->
 
             <!-- CIRCLE -->
-            <div class="col-lg-7">
+            <section class="col-sm-7 bg-rosso">
                 <div id="circle" class="text-center"></div>
-            </div>
-            <!-- end col-lg-7 -->
-
-        </div>
-        <!-- end col-lg-5 -->
-        </div>
-        <!-- end row -->
+            </section> <!-- end col-lg-7 -->
+        </div> <!-- end row -->
     </main>
 
     <!-- JS -->
     <script src="js/scripts.js"></script>
 </body>
-
 </html>

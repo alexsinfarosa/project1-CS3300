@@ -1,135 +1,101 @@
 /*=================================
 =            HISTOGRAM            =
 =================================*/
-var width = 400,
-    height = 400,
-    padding = 50;
+// Defining variables
+var margin = {
+        top: 50,
+        right: 0,
+        bottom: 50,
+        left: 30
+    },
+    width = 350 - margin.left - margin.right,
+    height = 200 - margin.top - margin.bottom;
+
+// Scales 
+var x = d3.scale.ordinal()
+    .rangeRoundBands([0, width], .1, .3);
+
+var y = d3.scale.linear()
+    .rangeRound([height, 0]);
+
+//Define X axis
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+//Define Y axis
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .ticks(4);
+
+// Create the SVG
+var svg = d3.select("#histogram")
+    .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 // Load and parse data
-d3.json("dataset.json", function(err, data) {
-    dataset = data;
+d3.tsv("users.tsv", type, function(error, data) {
+    x.domain(data.map(function(d) {
+        return d.name;
+    }));
+    y.domain([0, d3.max(data, function(d) {
+        return d.value;
+    })]);
 
-    // Create array of "users" only
-    var users = dataset.map(function(i) {
-        return i.users;
-    });
-
-    // Create a count for each users.value
-    var civil = 0;
-    var commercial = 0;
-    var military = 0;
-    var government = 0;
-    users.forEach(function(user, index) {
-        if (user == "Civil") {
-            civil++;
-        } else if (user == "Commercial") {
-            commercial++;
-        } else if (user == "Government") {
-            government++;
-        } else if (user == "Military") {
-            military++;
-        }
-    });
-
-    // Create the array to generate the bars
-    var arrUsers = [civil, commercial, government, military];
-
-    // Scales               
-    var xScale = d3.scale.ordinal()
-        .domain(d3.range(arrUsers.length))
-        .rangeRoundBands([padding, width], 0.05);
-
-    var yScale = d3.scale.linear()
-        .domain([0, d3.max(arrUsers)])
-        .rangeRound([height / 3, 0]);
-
-    // Create the SVG
-    var svg = d3.select("#histogram")
-        .append("svg")
-        .attr("width", width + padding)
-        .attr("height", height + padding);
-
-    // Create the bars
-    svg.selectAll("rect")
-        .data(arrUsers)
-        .enter()
-        .append("rect")
-        .attr("x", function(d, i) {
-            return xScale(i);
-        })
-        .attr("y", function(d) {
-            return yScale(d);
-        })
-        .attr("width", xScale.rangeBand())
-        .attr("height", function(d) {
-            return height / 3 - yScale(d);
-        })
-        .attr("fill", "orange");
-
-    // Labels
-    svg.selectAll("text")
-        .data(arrUsers)
-        .enter()
-        .append("text")
-        .attr("class", "text")
-        .text(function(d) {
-            return d;
-        })
-        .attr("x", function(d, i) {
-            return xScale(i) + xScale.rangeBand() / 2;
-        })
-        .attr("y", function(d) {
-            return yScale(d) + 15;
-        })
-        .attr("text-anchor", "middle")
-
-    //Define X axis
-    var xAxis = d3.svg.axis()
-        .scale(xScale)
-        .orient("bottom")
-        .ticks(5);
-
-    // Defining Y axis
-    var yAxis = d3.svg.axis()
-        .scale(yScale)
-        .orient("left")
-        .ticks(5);
-
-    // // Create X axis
+    // Create X axis
     svg.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(0," + height / 3 + ")")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
         .call(xAxis);
 
     // Create Y axis
     svg.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(" + padding + ",0)")
+        .attr("class", "y axis")
         .call(yAxis);
 
-    // Text on the y-axis
-    svg.append("g")
-        .attr("class", "axis")
+    // Create Bars
+    svg.selectAll(".bar")
+        .data(data)
+        .enter()
+        .append("rect")
+        .attr("class", "bar")
+        .attr("x", function(d) {
+            return x(d.name);
+        })
+        .attr("width", x.rangeBand())
+        .attr("y", function(d) {
+            return y(d.value);
+        })
+        .attr("height", function(d) {
+            return height - y(d.value);
+        });
+
+    // Labels
+    svg.selectAll("svg")
+        .data(data)
+        .enter()
         .append("text")
-        .attr("transform", "rotate(-90)")
-        .attr("dy", "1em")
-        .style("text-anchor", "end")
-        .style("font-size", "13px")
-        .text("Satellites");
-
-    svg.append("g")
-        .data(arrUsers)
-        .attr("class", "axis")
-        .append("text")
-        .attr("x", xScale.rangeBand())
-        .attr("y", "200px")
-        // .attr("transform", "rotate(90)")
-        .text("Civil");
-
-
-
+        .attr("class", "text")
+        .text(function(d) {
+            return d.value;
+        })
+        .attr("x", function(d) {
+            return x(d.name) + x.rangeBand() / 2;
+        })
+        .attr("y", function(d) {
+            return y(d.value) + 12;
+        })
+        .attr("text-anchor", "middle");
 });
 
+function type(d) {
+    d.value = +d.value;
+    return d;
+}
 
 /*-----  End of HISTOGRAM  ------*/
 
@@ -142,13 +108,13 @@ d3.json("dataset.json", function(err, data) {
 // The circle javascript code goes here. Select the circle by its id. 
 // Everything would be displayed in that div. Something like this:
 
-var w = 600,
-    h = 600;
+// var w = 600,
+//     h = 600;
 
-var svg = d3.select("#circle")
-    .append("svg")
-    .attr("width", w)
-    .attr("height", h);
+// var svg = d3.select("#circle")
+//     .append("svg")
+//     .attr("width", w)
+//     .attr("height", h);
 
 
 

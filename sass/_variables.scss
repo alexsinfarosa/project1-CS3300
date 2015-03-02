@@ -23,4 +23,36 @@ $color-hr: #EEE;
 
 /*-----  End of variables  ------*/
 
+// backgound colors for testing
+.bg-azzurro,
+.bg-rosso,
+.bg-verde,
+.bg-giallo,
+.bg-chiaro,
+.bg-scuro {
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border: 1px solid $color-text;
+}
 
+.bg-rosso {
+	background: #FF5E3E;	
+}
+.bg-verde {
+	background: #8BC43F;
+}
+.bg-azzurro {
+	background: #6BC4E2;	
+}
+.bg-giallo {
+	background: #FFDE3D;	
+}
+.bg-chiaro {
+	background: #FAFAFA;
+	border: none;	
+}
+.bg-scuro {
+	background: #222;
+	border: none;	
+}

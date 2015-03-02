@@ -30,7 +30,7 @@ h6, {
 
 h1 {
 	font-size: 3.375rem;
-	line-height: 5rem;
+	line-height: 3.5rem;
 	// font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -40,12 +40,17 @@ h6 {
 	font-family: $font-1;
 	font-size: 1.5rem;
 	line-height: 1.7rem;
-	text-transform: lowercase;
 }
 
 p {
 	color: $color-text;
 	font-size: 1rem;
+}
+
+.total {
+	font-family: $font-2;
+	color: $color-text;
+	font-size: 2rem;
 }
 
 .margin-bottom {
@@ -60,16 +65,21 @@ svg {
 	// background: orange;
 }
 
-.text {
-	font-size: 12px;
-	fill: white;
-	font-weight: bold;
+.bar {
+  fill: steelblue;
 }
 
-.axis text {
-  font-family: $font-1;
-  fill: #fff;
-  font-size: 11px;
+.axis {
+  font: 10px sans-serif;
+  fill: white;
+  letter-spacing: 1px;
+
+}
+g text {
+	display: inline-block;
+	fill: white;
+	font-size: 10px;
+
 }
 
 .axis path,
@@ -78,6 +88,12 @@ svg {
   stroke: #fff;
   shape-rendering: crispEdges;
 }
+
+.x.axis path {
+  display: none;
+}
+
+
 
 
 
