@@ -3,20 +3,26 @@
 =================================*/
 // Defining variables
 var margin = {
-        top: 50,
+        top: 5,
         right: 0,
         bottom: 50,
-        left: 30
+        left: 10
     },
-    width = 350 - margin.left - margin.right,
-    height = 200 - margin.top - margin.bottom;
+    width = 400 - margin.left - margin.right,
+    height = 250 - margin.top - margin.bottom,
+    heightH = height / 2;
 
-// Scales 
+// X scale 
 var x = d3.scale.ordinal()
     .rangeRoundBands([0, width], .1, .3);
 
+// Y scale
 var y = d3.scale.linear()
-    .rangeRound([height, 0]);
+    .rangeRound([heightH, 0]);
+
+// Color scale
+var color = d3.scale.ordinal()
+    .range(["#c51b8a", "#31a354" , "#2c7fb8", "#d95f0e"]);
 
 //Define X axis
 var xAxis = d3.svg.axis()
@@ -45,24 +51,60 @@ d3.tsv("users.tsv", type, function(error, data) {
     y.domain([0, d3.max(data, function(d) {
         return d.value;
     })]);
+    color.domain(data.map(function(d) {
+        return d.name;
+    }));
 
     // Create X axis
-    svg.append("g")
-        .attr("class", "x axis")
-        .attr("transform", "translate(0," + height + ")")
-        .call(xAxis);
+    // svg.append("g")
+    //     .attr("class", "x axis")
+    //     .attr("transform", "translate(0," + height + ")")
+    //     .call(xAxis);
 
     // Create Y axis
+    // svg.append("g")
+    //     .attr("class", "y axis")
+    //     .call(yAxis);
+
+    // X-axis text
     svg.append("g")
-        .attr("class", "y axis")
-        .call(yAxis);
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + heightH + ")")
+        .call(xAxis)
+        .selectAll("text")
+        .style("text-anchor", "end")
+        .attr("dx", "-0.6em")
+        .attr("dy", "1em")
+        .attr("transform", function(d) {
+            return "rotate(-30)"
+        });
+
+    // Y line
+    svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + heightH + ")")
+        .append("line")
+        .attr("x1", 0)
+        .attr("y1", 0)
+        .attr("x2", 0)
+        .attr("y2", -30);
+    
+    // X line 
+    svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + heightH + ")")    
+        .append("line")
+        .attr("x1", 0)
+        .attr("y1", -0.5)
+        .attr("x2", 375)
+        .attr("y2", -0.5);
 
     // Create Bars
     svg.selectAll(".bar")
         .data(data)
         .enter()
         .append("rect")
-        .attr("class", "bar")
+        // .attr("class", "bar")
         .attr("x", function(d) {
             return x(d.name);
         })
@@ -71,7 +113,10 @@ d3.tsv("users.tsv", type, function(error, data) {
             return y(d.value);
         })
         .attr("height", function(d) {
-            return height - y(d.value);
+            return heightH - y(d.value);
+        })
+        .attr("fill", function(d,i ) {
+            return color(i);
         });
 
     // Labels
@@ -90,6 +135,8 @@ d3.tsv("users.tsv", type, function(error, data) {
             return y(d.value) + 12;
         })
         .attr("text-anchor", "middle");
+
+
 });
 
 function type(d) {
