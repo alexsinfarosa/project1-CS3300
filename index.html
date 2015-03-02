@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,7 +38,40 @@
 
                 <!-- HISTOGRAM -->
                 <div id="histogram"></div>
+                <script>
+                var height = 400;
+                var width = 400;
+                var padding = 50;
+                var countMinMax = [0, 1000];
+                var svg = d3.select("#plot").append("svg")
+                   .attr("height", height).attr("width", width);
+                var xScale = d3.scale.linear()
+                  .domain([,]).range([padding, width - padding]);
+                var yScale = d3.scale.linear()
+                  .domain(countMinMax).range([height - padding, padding]);
+                var xAxis = d3.svg.axis().scale(xScale);
+                svg.append("g")
+                  .attr("class", "axis")
+                  .attr("transform", "translate(0, " + yScale(countMinMax[0]) + ")")
+                  .call(xAxis);
+                var yAxis = d3.svg.axis().scale(yScale).orient("left");
+                svg.append("g")
+                    .attr("class", "axis")
+                    .attr("transform", "translate(" + padding + ", 0)")
+                    .call(yAxis);
 
+                var dataset;
+                d3.json("dataset.json", function (data) {
+                dataset = data;
+                var wordGroup = svg.append("g");
+                var words = wordGroup.selectAll("text").data(dataset.words);
+                words.enter().append("text")
+                .attr("x", function(w) { return xScale()})
+                .attr("y", function(w) { return yScale(w.count); })
+                .text(function (w) { return w.word; } );
+
+            });
+                </script>
                 <!-- TOTAL -->
                 <h2>TOTAL: <span class="total">1235 satellites in orbit</span></h2>
 
