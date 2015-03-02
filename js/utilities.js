@@ -2,7 +2,8 @@
 =        CREATING THE TSV FILE    =
 =================================*/
 
-// Load and parse data
+// This peice of code was implemented to create an array with some numeric values to use in the histogram
+// The generated array was used to create the users.tsv file.
 d3.json("dataset.json", function(err, data) {
     dataset = data;
 
