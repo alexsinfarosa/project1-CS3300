@@ -7,13 +7,13 @@ d3.tsv("users.tsv", type, function(error, data) {
 
     // Defining variables
     var margin = {
-            top: 5,
+            top: 20,
             right: 0,
             bottom: 50,
             left: 10
         },
         width = 400 - margin.left - margin.right,
-        height = 250 - margin.top - margin.bottom,
+        height = 400 - margin.top - margin.bottom,
         heightH = height / 2;
 
     // X scale 
@@ -141,16 +141,25 @@ function type(d) {
 =            CIRCLE            =
 ==============================*/
 
-d3.json("dataset.json", type, function(error, data) {
-    var w = 600,
-        h = 600;
+// d3.json("dataset.json", type, function(error, data) {
+    var w = 700,
+        h = 700;
 
     var svg = d3.select("#circle")
         .append("svg")
         .attr("width", w)
         .attr("height", h);
 
-    svg.append()
+    svg.append("g")
+        .append("circle")
+        .attr({
+            cx: w/2,
+            cy: h/2,
+            r: w/3,
+            stroke: "white",
+            fill: "none"
+        });
 
-});
+
+// });
 /*-----  End of CIRCLE  ------*/
