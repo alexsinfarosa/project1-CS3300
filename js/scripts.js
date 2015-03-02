@@ -1,70 +1,60 @@
 /*=================================
 =            HISTOGRAM            =
 =================================*/
-// Defining variables
-var margin = {
-        top: 5,
-        right: 0,
-        bottom: 50,
-        left: 10
-    },
-    width = 400 - margin.left - margin.right,
-    height = 250 - margin.top - margin.bottom,
-    heightH = height / 2;
-
-// X scale 
-var x = d3.scale.ordinal()
-    .rangeRoundBands([0, width], .1, .3);
-
-// Y scale
-var y = d3.scale.linear()
-    .rangeRound([heightH, 0]);
-
-// Color scale
-var color = d3.scale.ordinal()
-    .range(["#c51b8a", "#31a354" , "#2c7fb8", "#d95f0e"]);
-
-//Define X axis
-var xAxis = d3.svg.axis()
-    .scale(x)
-    .orient("bottom");
-
-//Define Y axis
-var yAxis = d3.svg.axis()
-    .scale(y)
-    .orient("left")
-    .ticks(4);
-
-// Create the SVG
-var svg = d3.select("#histogram")
-    .append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 // Load and parse data
 d3.tsv("users.tsv", type, function(error, data) {
+
+    // Defining variables
+    var margin = {
+            top: 5,
+            right: 0,
+            bottom: 50,
+            left: 10
+        },
+        width = 400 - margin.left - margin.right,
+        height = 250 - margin.top - margin.bottom,
+        heightH = height / 2;
+
+    // X scale 
+    var x = d3.scale.ordinal()
     x.domain(data.map(function(d) {
         return d.name;
-    }));
+    }))
+    .rangeRoundBands([0, width], .1, .3);
+
+    // Y scale
+    var y = d3.scale.linear()
     y.domain([0, d3.max(data, function(d) {
         return d.value;
-    })]);
+    })])
+    .rangeRound([heightH, 0]);
+
+    // Color scale
+    var color = d3.scale.ordinal()
     color.domain(data.map(function(d) {
         return d.name;
-    }));
+    }))
+    .range(["#c51b8a", "#31a354", "#2c7fb8", "#d95f0e"]);
 
-    // Create X axis
-    // svg.append("g")
-    //     .attr("class", "x axis")
-    //     .attr("transform", "translate(0," + height + ")")
-    //     .call(xAxis);
+    //Define X axis
+    var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom");
 
-    // Create Y axis
-    // svg.append("g")
-    //     .attr("class", "y axis")
-    //     .call(yAxis);
+    //Define Y axis
+    var yAxis = d3.svg.axis()
+        .scale(y)
+        .orient("left")
+        .ticks(4);
+
+    // Create the SVG
+    var svg = d3.select("#histogram")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     // X-axis text
     svg.append("g")
@@ -88,11 +78,11 @@ d3.tsv("users.tsv", type, function(error, data) {
         .attr("y1", 0)
         .attr("x2", 0)
         .attr("y2", -30);
-    
+
     // X line 
     svg.append("g")
         .attr("class", "x axis")
-        .attr("transform", "translate(0," + heightH + ")")    
+        .attr("transform", "translate(0," + heightH + ")")
         .append("line")
         .attr("x1", 0)
         .attr("y1", -0.5)
@@ -115,7 +105,7 @@ d3.tsv("users.tsv", type, function(error, data) {
         .attr("height", function(d) {
             return heightH - y(d.value);
         })
-        .attr("fill", function(d,i ) {
+        .attr("fill", function(d, i) {
             return color(i);
         });
 
@@ -151,18 +141,16 @@ function type(d) {
 =            CIRCLE            =
 ==============================*/
 
+d3.json("dataset.json", type, function(error, data) {
+    var w = 600,
+        h = 600;
 
-// The circle javascript code goes here. Select the circle by its id. 
-// Everything would be displayed in that div. Something like this:
+    var svg = d3.select("#circle")
+        .append("svg")
+        .attr("width", w)
+        .attr("height", h);
 
-// var w = 600,
-//     h = 600;
+    svg.append()
 
-// var svg = d3.select("#circle")
-//     .append("svg")
-//     .attr("width", w)
-//     .attr("height", h);
-
-
-
+});
 /*-----  End of CIRCLE  ------*/

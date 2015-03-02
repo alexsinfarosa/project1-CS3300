@@ -2021,6 +2021,9 @@ p {
 .margin-bottom {
   margin-bottom: 61.2px; }
 
+svg {
+  border: 1px solid #fff; }
+
 .bar {
   fill: steelblue; }
 
