@@ -141,7 +141,23 @@ function type(d) {
 =            CIRCLE            =
 ==============================*/
 
-// d3.json("dataset.json", type, function(error, data) {
+d3.json("dataset.json", function(error, data) {
+    var countries=[];
+    var purposes=[];
+
+    for (var i = 0; i < data.length; i++) {
+        if (countries.indexOf(data[i].country)==-1) {
+            countries.push(data[i].country);
+        };
+    };
+
+    for (var i = 0; i < data.length; i++) {
+        if (purposes.indexOf(data[i].purpose)==-1) {
+            purposes.push(data[i].purpose);
+        };
+    };
+    document.getElementById("circle").innerHTML = purposes;
+
     var w = 700,
         h = 700;
 
@@ -161,5 +177,5 @@ function type(d) {
         });
 
 
-// });
+});
 /*-----  End of CIRCLE  ------*/
