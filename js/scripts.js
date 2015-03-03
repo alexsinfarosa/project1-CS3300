@@ -3,39 +3,62 @@
 =================================*/
 
 // Load and parse data
-d3.tsv("users.tsv", type, function(error, data) {
+d3.json("dataset.json", function(err, data) {
+
+    // Create array of "users" only
+    var users = data.map(function(i) {
+        return i.user;
+    });
+
+    // Generate an object with the (key: value) = (user: number of satellites) ex: (Civil: 85)
+    var objectUsers = {};
+    for (i = 0; i < users.length; ++i) {
+        if (!objectUsers[users[i]])
+            objectUsers[users[i]] = 0;
+        ++objectUsers[users[i]];
+    }
+
+    // Create an array with the keys
+    var userKeys;
+    userKeys = Object.keys(objectUsers);
+
+    // Create an array with the properties
+    var userProperties = [];
+    for (key in objectUsers) {
+        if (objectUsers.hasOwnProperty(key)) {
+            userProperties.push(objectUsers[key]);
+        }
+    }
 
     // Defining variables
     var margin = {
             top: 20,
-            right: 0,
-            bottom: 50,
+            right: 10,
+            bottom: 20,
             left: 10
         },
         width = 400 - margin.left - margin.right,
-        height = 400 - margin.top - margin.bottom,
-        heightH = height / 2;
+        height = 200 - margin.top - margin.bottom,
+        heightH = height / 1.5;
 
     // X scale 
     var x = d3.scale.ordinal()
-    x.domain(data.map(function(d) {
-        return d.name;
-    }))
-    .rangeRoundBands([0, width], .1, .3);
+        .domain(userKeys.map(function(d) {
+            return d;
+        }))
+        .rangeRoundBands([0, width], .1, .3);
 
     // Y scale
     var y = d3.scale.linear()
-    y.domain([0, d3.max(data, function(d) {
-        return d.value;
-    })])
-    .rangeRound([heightH, 0]);
+        .domain([0, d3.max(userProperties)])
+        .rangeRound([heightH, 0]);
 
     // Color scale
     var color = d3.scale.ordinal()
-    color.domain(data.map(function(d) {
-        return d.name;
-    }))
-    .range(["#c51b8a", "#31a354", "#2c7fb8", "#d95f0e"]);
+        .domain(userKeys.map(function(d) {
+            return d;
+        }))
+        .range(["#c51b8a", "#31a354", "#2c7fb8", "#d95f0e"]);
 
     //Define X axis
     var xAxis = d3.svg.axis()
@@ -91,19 +114,18 @@ d3.tsv("users.tsv", type, function(error, data) {
 
     // Create Bars
     svg.selectAll(".bar")
-        .data(data)
+        .data(userProperties)
         .enter()
         .append("rect")
-        // .attr("class", "bar")
-        .attr("x", function(d) {
-            return x(d.name);
+        .attr("x", function(d, i) {
+            return x(userKeys[i]);
         })
         .attr("width", x.rangeBand())
-        .attr("y", function(d) {
-            return y(d.value);
+        .attr("y", function(d, i) {
+            return y(userProperties[i]);
         })
-        .attr("height", function(d) {
-            return heightH - y(d.value);
+        .attr("height", function(d, i) {
+            return heightH - y(userProperties[i]);
         })
         .attr("fill", function(d, i) {
             return color(i);
@@ -111,28 +133,161 @@ d3.tsv("users.tsv", type, function(error, data) {
 
     // Labels
     svg.selectAll("svg")
-        .data(data)
+        .data(userKeys)
         .enter()
         .append("text")
         .attr("class", "text")
-        .text(function(d) {
-            return d.value;
+        .text(function(d, i) {
+            return userProperties[i];
         })
-        .attr("x", function(d) {
-            return x(d.name) + x.rangeBand() / 2;
+        .attr("x", function(d, i) {
+            return x(userKeys[i]) + x.rangeBand() / 2;
         })
-        .attr("y", function(d) {
-            return y(d.value) + 12;
+        .attr("y", function(d, i) {
+            return y(userProperties[i]) + 12;
         })
         .attr("text-anchor", "middle");
 
+    // THE HORIZONTAL BAR---------------------------------------------------------------------------
+
+    // Create array of "countries" only
+    var countries = data.map(function(i) {
+        return i.country;
+    });
+
+    // Generate an object with the (key: value) = (country: number of satellites) ex: (USA: 459)
+    var objectCountries = {};
+    for (i = 0; i < countries.length; ++i) {
+        if (!objectCountries[countries[i]])
+            objectCountries[countries[i]] = 0;
+        ++objectCountries[countries[i]];
+    }
+    console.log(objectCountries);
+
+    // Create an array with the keys
+    var countryKeys;
+    countryKeys = Object.keys(objectCountries);
+    console.log(countryKeys);
+
+    // Create an array with the properties
+    var countryProperties = [];
+    for (key in objectCountries) {
+        if (objectCountries.hasOwnProperty(key)) {
+            countryProperties.push(objectCountries[key]);
+        }
+    }
+    console.log(countryProperties);
+
+    // var svg = d3.select("#countries")
+    //     .append("svg")
+    //     .attr("width", width + margin.left + margin.right)
+    //     .attr("height", height + margin.top + margin.bottom)
+    //     .append("g")
+    //     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    // X scale 
+    var topCountries = ["USA", "Russia", "China", "Japan", "Others"];
+    var numSatellites = [496, 131, 59, 116, 433];
+    var dataset = [
+        [{
+            x: 0,
+            y: 496
+        }],
+        [{
+            x: 1,
+            y: 131
+        }],
+        [{
+            x: 2,
+            y: 59
+        }],
+        [{
+            x: 3,
+            y: 116
+        }],
+        [{
+            x: 4,
+            y: 433
+        }]
+    ];
+
+    //Set up stack method
+    var stack = d3.layout.stack();
+
+    //Data, stacked
+    stack(dataset);
+
+    //Set up scales
+    var xScale = d3.scale.ordinal()
+        .domain(d3.range(dataset[0].length))
+        .rangeRoundBands([margin.left, width / 6], 0.05);
+
+    var yScale = d3.scale.linear()
+        .domain([0,
+            d3.max(dataset, function(d) {
+                return d3.max(d, function(d) {
+                    return d.y0 + d.y;
+                });
+            })
+        ])
+        .range([0, height * 1.5]);
+
+    //Easy colors accessible via a 10-step ordinal scale
+    var colors = d3.scale.category20();
+    // var colors = ["#c51b8a", "#31a354", "#2c7fb8", "#d95f0e", "#f03b20"];
+
+    var svg = d3.select("#countries")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + 100 + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    // Add a group for each row of data
+    var groups = svg.selectAll("g")
+        .data(dataset)
+        .enter()
+        .append("g")
+        .style("fill", function(d, i) {
+            return colors(i);
+        });
+
+    // Add a rect for each data value
+    var rects = groups.selectAll("rect")
+        .data(function(d) {
+            return d;
+        })
+        .enter()
+        .append("rect")
+        .attr("x", function(d, i) {
+            return xScale(i);
+        })
+        .attr("y", function(d) {
+            return yScale(d.y0);
+        })
+        .attr("height", function(d) {
+            return yScale(d.y);
+        })
+        .attr("width", xScale.rangeBand());
+
+
+    // svg.selectAll("svg")
+    //     .data(dataset)
+    //     .enter()
+    //     .append("text")
+    //     .attr("class", "text")
+    //     .text(function(d, i) {
+    //         return countryProperties[i];
+    //     })
+    //     .attr("x", function(d, i) {
+    //         return x(userKeys[i]) + x.rangeBand() / 2;
+    //     })
+    //     .attr("y", function(d, i) {
+    //         return y(userProperties[i]) + 12;
+    //     })
+    //     .attr("text-anchor", "middle");
 
 });
-
-function type(d) {
-    d.value = +d.value;
-    return d;
-}
 
 /*-----  End of HISTOGRAM  ------*/
 
@@ -142,23 +297,35 @@ function type(d) {
 ==============================*/
 
 // d3.json("dataset.json", type, function(error, data) {
-    var w = 700,
-        h = 700;
+// var w = 700,
+//     h = 700;
 
-    var svg = d3.select("#circle")
-        .append("svg")
-        .attr("width", w)
-        .attr("height", h);
+// var svg = d3.select("#circle")
+//     .append("svg")
+//     .attr("width", w)
+//     .attr("height", h);
 
-    svg.append("g")
-        .append("circle")
-        .attr({
-            cx: w/2,
-            cy: h/2,
-            r: w/3,
-            stroke: "white",
-            fill: "none"
-        });
+// var innerCircle = svg.append("g")
+//     .append("circle")
+//     .attr({
+//         cx: w / 2,
+//         cy: h / 2,
+//         r: w / 3,
+//         stroke: "white",
+//         fill: "none"
+//     });
+
+// var outerCircle = svg.append("g")
+//     .append("circle")
+//     // .data(range)
+//     .attr({
+//         cx: w / 2,
+//         cy: h / 2,
+//         r: w / 3.2,
+//         stroke: "white",
+//         fill: "none"
+//     });
+
 
 
 // });
