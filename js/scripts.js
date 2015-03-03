@@ -156,17 +156,27 @@ d3.json("dataset.json", function(error, data) {
             purposes.push(data[i].purpose);
         };
     };
-    document.getElementById("circle").innerHTML = purposes;
 
-    var w = 700,
-        h = 700;
+    var w = 800,
+        h = 800;
 
     var svg = d3.select("#circle")
         .append("svg")
         .attr("width", w)
         .attr("height", h);
 
-    svg.append("g")
+    for (var i = 0; i < countries.length; i++) {
+        svg.append("text")
+            .attr("x", w/1.2)
+            .attr("y", h/2)
+            .attr("fill", "white")
+            .attr("font-size", "12px")
+            .attr("transform", function(d) { return "rotate("+ i*3.2 +","+ w/2 +","+ h/2 +")"; })
+            .text(countries[i]);
+    };
+        
+
+    /*svg.append("g")
         .append("circle")
         .attr({
             cx: w/2,
@@ -174,7 +184,7 @@ d3.json("dataset.json", function(error, data) {
             r: w/3,
             stroke: "white",
             fill: "none"
-        });
+        });*/
 
 
 });
