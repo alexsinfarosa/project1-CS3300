@@ -296,9 +296,30 @@ d3.json("dataset.json", function(err, data) {
 =            CIRCLE            =
 ==============================*/
 
+<<<<<<< HEAD
 // d3.json("dataset.json", type, function(error, data) {
 // var w = 700,
 //     h = 700;
+=======
+d3.json("dataset.json", function(error, data) {
+    var countries=[];
+    var purposes=[];
+
+    for (var i = 0; i < data.length; i++) {
+        if (countries.indexOf(data[i].country)==-1) {
+            countries.push(data[i].country);
+        };
+    };
+
+    for (var i = 0; i < data.length; i++) {
+        if (purposes.indexOf(data[i].purpose)==-1) {
+            purposes.push(data[i].purpose);
+        };
+    };
+
+    var w = 800,
+        h = 800;
+>>>>>>> origin/master
 
 // var svg = d3.select("#circle")
 //     .append("svg")
@@ -326,7 +347,30 @@ d3.json("dataset.json", function(err, data) {
 //         fill: "none"
 //     });
 
+<<<<<<< HEAD
+=======
+    for (var i = 0; i < countries.length; i++) {
+        svg.append("text")
+            .attr("x", w/1.2)
+            .attr("y", h/2)
+            .attr("fill", "white")
+            .attr("font-size", "12px")
+            .attr("transform", function(d) { return "rotate("+ i*3.2 +","+ w/2 +","+ h/2 +")"; })
+            .text(countries[i]);
+    };
+        
+
+    /*svg.append("g")
+        .append("circle")
+        .attr({
+            cx: w/2,
+            cy: h/2,
+            r: w/3,
+            stroke: "white",
+            fill: "none"
+        });*/
+>>>>>>> origin/master
 
 
-// });
+});
 /*-----  End of CIRCLE  ------*/

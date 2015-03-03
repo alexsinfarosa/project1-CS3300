@@ -1396,8 +1396,13 @@
   },
   {
     "country":"India",
+<<<<<<< HEAD
     "user":"Government",
     "purpose":"Remote sensing"
+=======
+    "users":"Government",
+    "purpose":"Remote Sensing"
+>>>>>>> origin/master
   },
   {
     "country":"India",
