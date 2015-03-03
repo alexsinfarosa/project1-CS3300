@@ -263,4 +263,43 @@ d3.json("dataset.json", function(err, data) {
 ==============================*/
 
 
+d3.json("dataset.json", function(error, data) {
+    var countries=[];
+    var purposes=[];
+    var rotation;
+
+    for (var i = 0; i < data.length; i++) {
+        if (countries.indexOf(data[i].country)==-1) {
+            countries.push(data[i].country);
+        };
+    };
+
+    for (var i = 0; i < data.length; i++) {
+        if (purposes.indexOf(data[i].purpose)==-1) {
+            purposes.push(data[i].purpose);
+        };
+    };
+
+    var w = 800,
+        h = 800;
+
+
+var svg = d3.select("#circle")
+    .append("svg")
+    .attr("width", w)
+    .attr("height", h);
+
+
+    for (var i = 0; i < countries.length; i++) {
+        rotation = i*3.2;
+        rotation-=90;
+        svg.append("text")
+            .attr("x", w/1.2)
+            .attr("y", h/2)
+            .attr("fill", "white")
+            .attr("font-size", "12px")
+            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; })
+            .text(countries[i]);
+    };
+});
 /*-----  End of CIRCLE  ------*/
