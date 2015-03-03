@@ -304,6 +304,7 @@ d3.json("dataset.json", function(err, data) {
 d3.json("dataset.json", function(error, data) {
     var countries=[];
     var purposes=[];
+    var rotation;
 
     for (var i = 0; i < data.length; i++) {
         if (countries.indexOf(data[i].country)==-1) {
@@ -350,12 +351,14 @@ d3.json("dataset.json", function(error, data) {
 <<<<<<< HEAD
 =======
     for (var i = 0; i < countries.length; i++) {
+        rotation = i*3.2;
+        rotation-=90;
         svg.append("text")
             .attr("x", w/1.2)
             .attr("y", h/2)
             .attr("fill", "white")
             .attr("font-size", "12px")
-            .attr("transform", function(d) { return "rotate("+ i*3.2 +","+ w/2 +","+ h/2 +")"; })
+            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; })
             .text(countries[i]);
     };
         
