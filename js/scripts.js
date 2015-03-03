@@ -3,7 +3,7 @@
 =================================*/
 
 // Load and parse data
-d3.json("dataset.json", function(err, data) {
+d3.json("dataset.json", function(err, data) { 
 
     // Create array of "users" only
     var users = data.map(function(i) {
@@ -148,7 +148,7 @@ d3.json("dataset.json", function(err, data) {
         })
         .attr("text-anchor", "middle");
 
-    // THE HORIZONTAL BAR---------------------------------------------------------------------------
+        // THE HORIZONTAL BAR---------------------------------------------------------------------------
 
     // Create array of "countries" only
     var countries = data.map(function(i) {
@@ -252,42 +252,8 @@ d3.json("dataset.json", function(err, data) {
             return colors(i);
         });
 
-    // Add a rect for each data value
-    var rects = groups.selectAll("rect")
-        .data(function(d) {
-            return d;
-        })
-        .enter()
-        .append("rect")
-        .attr("x", function(d, i) {
-            return xScale(i);
-        })
-        .attr("y", function(d) {
-            return yScale(d.y0);
-        })
-        .attr("height", function(d) {
-            return yScale(d.y);
-        })
-        .attr("width", xScale.rangeBand());
-
-
-    // svg.selectAll("svg")
-    //     .data(dataset)
-    //     .enter()
-    //     .append("text")
-    //     .attr("class", "text")
-    //     .text(function(d, i) {
-    //         return countryProperties[i];
-    //     })
-    //     .attr("x", function(d, i) {
-    //         return x(userKeys[i]) + x.rangeBand() / 2;
-    //     })
-    //     .attr("y", function(d, i) {
-    //         return y(userProperties[i]) + 12;
-    //     })
-    //     .attr("text-anchor", "middle");
-
 });
+
 
 /*-----  End of HISTOGRAM  ------*/
 
@@ -296,84 +262,5 @@ d3.json("dataset.json", function(err, data) {
 =            CIRCLE            =
 ==============================*/
 
-<<<<<<< HEAD
-// d3.json("dataset.json", type, function(error, data) {
-// var w = 700,
-//     h = 700;
-=======
-d3.json("dataset.json", function(error, data) {
-    var countries=[];
-    var purposes=[];
-    var rotation;
 
-    for (var i = 0; i < data.length; i++) {
-        if (countries.indexOf(data[i].country)==-1) {
-            countries.push(data[i].country);
-        };
-    };
-
-    for (var i = 0; i < data.length; i++) {
-        if (purposes.indexOf(data[i].purpose)==-1) {
-            purposes.push(data[i].purpose);
-        };
-    };
-
-    var w = 800,
-        h = 800;
->>>>>>> origin/master
-
-// var svg = d3.select("#circle")
-//     .append("svg")
-//     .attr("width", w)
-//     .attr("height", h);
-
-// var innerCircle = svg.append("g")
-//     .append("circle")
-//     .attr({
-//         cx: w / 2,
-//         cy: h / 2,
-//         r: w / 3,
-//         stroke: "white",
-//         fill: "none"
-//     });
-
-// var outerCircle = svg.append("g")
-//     .append("circle")
-//     // .data(range)
-//     .attr({
-//         cx: w / 2,
-//         cy: h / 2,
-//         r: w / 3.2,
-//         stroke: "white",
-//         fill: "none"
-//     });
-
-<<<<<<< HEAD
-=======
-    for (var i = 0; i < countries.length; i++) {
-        rotation = i*3.2;
-        rotation-=90;
-        svg.append("text")
-            .attr("x", w/1.2)
-            .attr("y", h/2)
-            .attr("fill", "white")
-            .attr("font-size", "12px")
-            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; })
-            .text(countries[i]);
-    };
-        
-
-    /*svg.append("g")
-        .append("circle")
-        .attr({
-            cx: w/2,
-            cy: h/2,
-            r: w/3,
-            stroke: "white",
-            fill: "none"
-        });*/
->>>>>>> origin/master
-
-
-});
 /*-----  End of CIRCLE  ------*/
