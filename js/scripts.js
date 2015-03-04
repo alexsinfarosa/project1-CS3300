@@ -319,28 +319,47 @@ d3.json("dataset.json", function(error, data) {
     for (var i = 0; i < countries.length; i++) {
         rotation = i*3.4;
         rotation-=86;
-        svg.append("text")
-            .attr("x", w/1.15)
-            .attr("y", h/2)
+        var rightCircle = svg.append("circle")
+            .attr("cx", w/1.15)
+            .attr("cy", h/2)
+            .attr("r",5)
             .attr("fill", "white")
-            .attr("font-size", "12px")
+            
+            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating the circles properly
+        var rightText = svg.append("text")
+            .attr("x", 710)
+            .attr("y", 417)
             .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating text properly
+            .text(countries[i])
+            .attr("font-size", "12px")
+            .attr("fill", "white");
 
-            .text(countries[i]);
+
+
     };
 
     //print list of purposes using svg text
     for (var i = 0; i < purposes.length; i++) {
         rotation = i*10;
         rotation-=35;
-        svg.append("text")
-            .attr("x", 150)
+        var colors = ["#c51b8a", "#31a354", "#2c7fb8", "#d95f0e", "#f03b20","#c51b8a", "#31a354", "#2c7fb8", "#d95f0e", "#f03b20"]
+        var leftCircle = svg.append("rect")
+            .attr("x", 100)
             .attr("y", h/2)
+            .attr("width",10)
+            .attr("height",30)
+            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating the rectangles properly
+            .attr("fill", function(){
+                return colors[i];
+            });
+        var leftText = svg.append("text")
+            .attr("x", 90)
+            .attr("y", 430)
+            .text(purposes[i])
             .attr("text-anchor", "end")
             .attr("fill", "white")
             .attr("font-size", "14px")
-            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating text properly
-            .text(purposes[i]);
+            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating the text properly;
     };
 
 });
