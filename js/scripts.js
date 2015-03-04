@@ -375,6 +375,8 @@ d3.json("dataset.json", function(error, data) {
     var countries = [];
     var purposes = [];
     var rotation;
+    var scrWidth = screen.width;
+    var scrHeight = screen.height;
 
     //creating array of countries
     for (var i = 0; i < data.length; i++) {
@@ -493,18 +495,19 @@ d3.json("dataset.json", function(error, data) {
 
     //draw svg lines between countries and purposes
     for (var i = 0; i < data.length; i++) {
-        var rightSideRect = d3.select("#" + data[i].country.split(" ")[0]).node().getBoundingClientRect();
-        var leftSideRect = d3.select("#" + data[i].purpose.split(" ")[0]).node().getBoundingClientRect();
-        var rightSideX = rightSideRect.left-950;
-        var rightSideY = rightSideRect.bottom+10;
-        var leftSideX = leftSideRect.right-950;
-        var leftSideY = leftSideRect.bottom+20;
+        var circleCoord = d3.select("#" + data[i].country.split(" ")[0]).node().getBoundingClientRect(); //get coordinates of each element on the right side of the circle
+        var rectCoord = d3.select("#" + data[i].purpose.split(" ")[0]).node().getBoundingClientRect(); //get coordinates of each element on the left side of the circle
+        var circleX = circleCoord.left-945;
+        var circleY = circleCoord.bottom-2;
+        var rectX = rectCoord.right-955;
+        var rectY = rectCoord.bottom-13;
         
+        //draw each line
         svg.append("line")
-            .attr("x1", leftSideX)
-            .attr("y1", leftSideY)
-            .attr("x2", rightSideX)
-            .attr("y2", rightSideY)
+            .attr("x1", rectX)
+            .attr("y1", rectY)
+            .attr("x2", circleX)
+            .attr("y2", circleY)
             .style("stroke-width", 1)
             .style("stroke", "white");
     };
