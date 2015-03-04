@@ -506,7 +506,7 @@ d3.json("dataset.json", function(error, data) {
             .attr("y1", rectY)
             .attr("x2", circleX)
             .attr("y2", circleY)
-            .style("stroke-width", 1.3)
+            .style("stroke-width", 0.1)
             .style("stroke", colors[purposes.indexOf(data[i].purpose)]);
     };
 
