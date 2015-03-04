@@ -262,37 +262,41 @@ d3.json("dataset.json", function(err, data) {
 =            CIRCLE            =
 ==============================*/
 
-
+//Load and parse data
 d3.json("dataset.json", function(error, data) {
     var countries=[];
     var purposes=[];
     var rotation;
 
+    //creating array of countries
     for (var i = 0; i < data.length; i++) {
         if (countries.indexOf(data[i].country)==-1) {
             countries.push(data[i].country);
         };
     };
 
+    //creating array of purposes
     for (var i = 0; i < data.length; i++) {
         if (purposes.indexOf(data[i].purpose)==-1) {
             purposes.push(data[i].purpose);
         };
     };
+    var index=purposes.indexOf("Technology Development");
+    purposes[index]="Tech Development";
 
     var w = 800,
         h = 800;
 
+    //create svg element
+    var svg = d3.select("#circle")
+        .append("svg")
+        .attr("width", w)
+        .attr("height", h);
 
-var svg = d3.select("#circle")
-    .append("svg")
-    .attr("width", w)
-    .attr("height", h);
-
-
+    //print list of countries using svg text
     for (var i = 0; i < countries.length; i++) {
         rotation = i*3.2;
-        rotation-=90;
+        rotation-=75;
         svg.append("text")
             .attr("x", w/1.2)
             .attr("y", h/2)
@@ -301,5 +305,20 @@ var svg = d3.select("#circle")
             .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; })
             .text(countries[i]);
     };
+
+    //print list of purposes using svg text
+    for (var i = 0; i < purposes.length; i++) {
+        rotation = i*10;
+        rotation-=35;
+        svg.append("text")
+            .attr("x", 130)
+            .attr("y", h/2)
+            .attr("text-anchor", "end")
+            .attr("fill", "white")
+            .attr("font-size", "14px")
+            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; })
+            .text(purposes[i]);
+    };
+
 });
 /*-----  End of CIRCLE  ------*/
