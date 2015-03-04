@@ -414,6 +414,7 @@ d3.json("dataset.json", function(error, data) {
             .attr("cy", h / 2)
             .attr("r", 3)
             .attr("fill", "white")
+            .attr("id", countries[i].split(" ")[0])
             .attr("transform", function(d) {
                 return "rotate(" + rotation + "," + w / 2 + "," + h / 2 + ")";
             }) //rotating the circles properly
@@ -426,7 +427,6 @@ d3.json("dataset.json", function(error, data) {
                 return "rotate(" + rotation + "," + w / 2 + "," + h / 2 + ")";
             }) //rotating text properly
             .text(countries[i])
-            .attr("id", countries[i].split(" ")[0])
             .attr("font-size", function() {
                 if (countries[i] == "USA") {
                     return "17px";
@@ -472,6 +472,7 @@ d3.json("dataset.json", function(error, data) {
             .attr("transform", function(d) {
                 return "rotate(" + rotation + "," + w / 2 + "," + h / 2 + ")";
             }) //rotating the rectangles properly
+            .attr("id", purposes[i].split(" ")[0])
             .attr("fill", function() {
                 return colors[i];
             });
@@ -484,7 +485,6 @@ d3.json("dataset.json", function(error, data) {
             .attr("text-anchor", "end")
             .attr("fill", "white")
             .attr("font-size", "12px")
-            .attr("id", purposes[i].split(" ")[0])
             .attr("transform", function(d) {
                 return "rotate(" + rotation + "," + w / 2 + "," + h / 2 + ")";
             }) //rotating the text properly;
@@ -496,9 +496,9 @@ d3.json("dataset.json", function(error, data) {
         var rightSideRect = d3.select("#" + data[i].country.split(" ")[0]).node().getBoundingClientRect();
         var leftSideRect = d3.select("#" + data[i].purpose.split(" ")[0]).node().getBoundingClientRect();
         var rightSideX = rightSideRect.left-950;
-        var rightSideY = rightSideRect.bottom+30;
+        var rightSideY = rightSideRect.bottom+10;
         var leftSideX = leftSideRect.right-950;
-        var leftSideY = leftSideRect.bottom+30;
+        var leftSideY = leftSideRect.bottom+20;
         
         svg.append("line")
             .attr("x1", leftSideX)
