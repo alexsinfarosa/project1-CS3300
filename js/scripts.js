@@ -304,19 +304,9 @@ d3.json("dataset.json", function(error, data) {
     var index=purposes.indexOf("Technology Development");
     purposes[index]="Tech Development";
 
-
+    //height and width variables
     var w = 800,
         h = 800;
-
-
-    var svg = d3.select("#circle")
-        .append("svg")
-        .attr("width", w)
-        .attr("height", h);
-
-    //height and width variables
-    var w = 1000,
-        h = 1000;
 
 
     //create svg element
@@ -327,18 +317,6 @@ d3.json("dataset.json", function(error, data) {
 
     //print list of countries using svg text
     for (var i = 0; i < countries.length; i++) {
-
-        rotation = i * 3.2;
-        rotation -= 90;
-        svg.append("text")
-            .attr("x", w / 1.2)
-            .attr("y", h / 2)
-            .attr("fill", "white")
-            .attr("font-size", "12px")
-            .attr("transform", function(d) {
-                return "rotate(" + rotation + "," + w / 2 + "," + h / 2 + ")";
-            })
-
         rotation = i*3.4;
         rotation-=86;
         svg.append("text")
