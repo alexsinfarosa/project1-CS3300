@@ -304,7 +304,7 @@ d3.json("dataset.json", function(error, data) {
     var index=purposes.indexOf("Technology Development");
     purposes[index]="Tech Development";
 
-<<<<<<< HEAD
+
     var w = 800,
         h = 800;
 
@@ -313,11 +313,11 @@ d3.json("dataset.json", function(error, data) {
         .append("svg")
         .attr("width", w)
         .attr("height", h);
-=======
+
     //height and width variables
     var w = 1000,
         h = 1000;
->>>>>>> origin/master
+
 
     //create svg element
     var svg = d3.select("#circle")
@@ -327,7 +327,7 @@ d3.json("dataset.json", function(error, data) {
 
     //print list of countries using svg text
     for (var i = 0; i < countries.length; i++) {
-<<<<<<< HEAD
+
         rotation = i * 3.2;
         rotation -= 90;
         svg.append("text")
@@ -338,7 +338,7 @@ d3.json("dataset.json", function(error, data) {
             .attr("transform", function(d) {
                 return "rotate(" + rotation + "," + w / 2 + "," + h / 2 + ")";
             })
-=======
+
         rotation = i*3.4;
         rotation-=86;
         svg.append("text")
@@ -347,7 +347,7 @@ d3.json("dataset.json", function(error, data) {
             .attr("fill", "white")
             .attr("font-size", "12px")
             .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating text properly
->>>>>>> origin/master
+
             .text(countries[i]);
     };
 
