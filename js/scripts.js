@@ -175,7 +175,7 @@ d3.json("dataset.json", function(err, data) {
         }
     }
 
-    // X scale 
+    // Defining variables
     var topCountries = ["USA", "Russia", "China", "Japan", "Others"];
     var numSatellites = [433, 59, 116, 131, 496];
     var dataset = [
@@ -229,7 +229,7 @@ d3.json("dataset.json", function(err, data) {
     var svg = d3.select("#countries")
         .append("svg")
         .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
+        .attr("height", height + 50 + margin.top + margin.bottom)
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
@@ -312,6 +312,12 @@ d3.json("dataset.json", function(err, data) {
         .text("OTHER COUNTRIES")
         .attr("x", 285)
         .attr("y", 90);
+
+    var line = svg.append("g")
+        .append("path")
+        .attr("d", "M3 180 L3 190 L370 190 L370 180")
+        .style("fill", "none")
+        .style("stroke", "white");
 
 });
 
