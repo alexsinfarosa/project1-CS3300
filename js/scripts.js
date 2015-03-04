@@ -272,6 +272,15 @@ d3.json("dataset.json", function(err, data) {
         .text("USA")
         .attr("x", 182)
         .attr("y", 20);
+
+    svg.append("text")
+        .text("496")
+        .attr("x",15)
+        .attr("y",250)
+        .attr("transform", "translate(370,100) rotate(90)")
+        .style("fill", "black")
+        .style("font-size","20px");
+
     // Russia
     svg.append("path")
         .attr("d", "M 170 100 L 200 40 L 215 40")
@@ -282,6 +291,14 @@ d3.json("dataset.json", function(err, data) {
         .text("RUSSIA")
         .attr("x", 217)
         .attr("y", 40);
+
+    svg.append("text")
+        .text("131")
+        .attr("x",15)
+        .attr("y",208)
+        .attr("transform", "translate(370,100) rotate(90)")
+        .style("fill", "black")
+        .style("font-size","20px");
     // China
     svg.append("path")
         .attr("d", "M 205 100 L 225 60 L 240 60")
@@ -292,6 +309,14 @@ d3.json("dataset.json", function(err, data) {
         .text("CHINA")
         .attr("x", 242)
         .attr("y", 60);
+
+    svg.append("text")
+        .text("116")
+        .attr("x",15)
+        .attr("y",173)
+        .attr("transform", "translate(370,100) rotate(90)")
+        .style("fill", "black")
+        .style("font-size","20px");
     // Japan
     svg.append("path")
         .attr("d", "M 232 100 L 242 78 L 257 78")
@@ -302,6 +327,14 @@ d3.json("dataset.json", function(err, data) {
         .text("JAPAN")
         .attr("x", 259)
         .attr("y", 78);
+
+    svg.append("text")
+        .text("59")
+        .attr("x",15)
+        .attr("y",145)
+        .attr("transform", "translate(370,100) rotate(90)")
+        .style("fill", "black")
+        .style("font-size","20px");
     // All countries
     svg.append("path")
         .attr("d", "M 262 100 L 268 90 L 283 90")
@@ -313,11 +346,13 @@ d3.json("dataset.json", function(err, data) {
         .attr("x", 285)
         .attr("y", 90);
 
-    var line = svg.append("g")
-        .append("path")
-        .attr("d", "M3 180 L3 190 L370 190 L370 180")
-        .style("fill", "none")
-        .style("stroke", "white");
+    svg.append("text")
+        .text("433")
+        .attr("x",15)
+        .attr("y",115)
+        .attr("transform", "translate(370,100) rotate(90)")
+        .style("fill", "black")
+        .style("font-size","20px");
 
 });
 
@@ -379,7 +414,6 @@ d3.json("dataset.json", function(error, data) {
             .attr("y", 417)
             .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating text properly
             .text(countries[i])
-            .attr("id", countries[i])
             .attr("font-size", function(){
                 if(countries[i] == "USA"){
                     return "15px";
@@ -431,27 +465,8 @@ d3.json("dataset.json", function(error, data) {
             .attr("text-anchor", "end")
             .attr("fill", "white")
             .attr("font-size", "12px")
-            .attr("id", purposes[i])
             .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating the text properly;
 
-
-    };
-
-    for (var i = 0; i < data.length; i++) {
-        var rightSideX = d3.select("#" + data[i].country).node().getBBox().x;
-        console.log(d3.select("#" + data[i].country));
-        var rightSideY = d3.select("#" + data[i].country).node().getBBox().y;
-        var leftSideX = d3.select("#" + data[1].purpose).node().getBBox().x;
-        console.log(d3.select("#" + data[2].purpose));
-        //console.log(d3.select("#" + data[i].purpose));
-        //var leftSideY = d3.select("#" + data[i].purpose).node().getBBox().y;
-
-        svg.append("line")
-            .attr("x1",leftSideX)
-            .attr("y1",leftSideY)
-            .attr("x2",rightSideX)
-            .attr("y2",rightSideY)
-            .attr("stroke-width", 2);
     };
 
 });
