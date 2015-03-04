@@ -2,7 +2,7 @@
   {
     "country":"Algeria",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Argentina",
@@ -27,47 +27,47 @@
   {
     "country":"Argentina",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Argentina",
     "user":"Commercial",
-    "purpose":"Maritime Tracking"
+    "purpose":"Maritime_Tracking"
   },
   {
     "country":"Argentina",
     "user":"Commercial",
-    "purpose":"Maritime Tracking"
+    "purpose":"Maritime_Tracking"
   },
   {
     "country":"Argentina",
     "user":"Commercial",
-    "purpose":"Maritime Tracking"
+    "purpose":"Maritime_Tracking"
   },
   {
     "country":"Argentina",
     "user":"Commercial",
-    "purpose":"Maritime Tracking"
+    "purpose":"Maritime_Tracking"
   },
   {
     "country":"Argentina",
     "user":"Commercial",
-    "purpose":"Maritime Tracking"
+    "purpose":"Maritime_Tracking"
   },
   {
     "country":"Argentina",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Argentina",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Argentina",
     "user":"Commercial",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Australia",
@@ -102,7 +102,7 @@
   {
     "country":"Austria",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Azerbaijan",
@@ -112,17 +112,17 @@
   {
     "country":"Belarus",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Belgium",
     "user":"Civil",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Belgium",
     "user":"Civil",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Bolivia",
@@ -167,7 +167,7 @@
   {
     "country":"Brazil",
     "user":"Civil",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Brazil",
@@ -252,92 +252,92 @@
   {
     "country":"Canada",
     "user":"Commercial",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Canada",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Canada",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Canada",
     "user":"Commercial",
-    "purpose":"Maritime Tracking"
+    "purpose":"Maritime_Tracking"
   },
   {
     "country":"Canada",
     "user":"Commercial",
-    "purpose":"Maritime Tracking"
+    "purpose":"Maritime_Tracking"
   },
   {
     "country":"Canada",
     "user":"Commercial",
-    "purpose":"Maritime Tracking"
+    "purpose":"Maritime_Tracking"
   },
   {
     "country":"Canada",
     "user":"Commercial",
-    "purpose":"Maritime Tracking"
+    "purpose":"Maritime_Tracking"
   },
   {
     "country":"Canada",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Canada",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Canada",
     "user":"Military",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Canada",
     "user":"Civil",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Canada",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Canada",
     "user":"Civil",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Canada",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Canada",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Canada",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Canada",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Chile",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"China",
@@ -457,67 +457,67 @@
   {
     "country":"China",
     "user":"Civil",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"China",
@@ -617,322 +617,322 @@
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"China",
     "user":"Civil",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"China",
     "user":"Civil",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"China",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"China",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"China",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Denmark",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Denmark",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Denmark",
     "user":"Commercial",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Egypt",
@@ -947,42 +947,42 @@
   {
     "country":"Egypt",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"ESA",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"ESA",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"ESA",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"ESA",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"ESA",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"ESA",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"ESA",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"ESA",
@@ -1007,57 +1007,57 @@
   {
     "country":"ESA",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"ESA",
     "user":"Commercial",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"ESA",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"ESA",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"ESA",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"ESA",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"ESA",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"ESA",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"ESA",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"ESA",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Estonia",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"France",
@@ -1072,37 +1072,37 @@
   {
     "country":"France",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"France",
     "user":"Commercial",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"France",
     "user":"Commercial",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"France",
     "user":"Commercial",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"France",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"France",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"France",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"France",
@@ -1117,7 +1117,7 @@
   {
     "country":"France",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"France",
@@ -1142,12 +1142,12 @@
   {
     "country":"France",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"France",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Germany",
@@ -1167,57 +1167,57 @@
   {
     "country":"Germany",
     "user":"Commercial",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Germany",
     "user":"Commercial",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Germany",
     "user":"Commercial",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Germany",
     "user":"Commercial",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Germany",
     "user":"Commercial",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Germany",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Germany",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Germany",
     "user":"Civil",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Germany",
     "user":"Civil",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Germany",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Germany",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Germany",
@@ -1247,32 +1247,32 @@
   {
     "country":"Germany",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Germany",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Germany",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Germany",
     "user":"Commercial",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Germany",
     "user":"Commercial",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Germany",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Greece",
@@ -1282,7 +1282,7 @@
   {
     "country":"Hungary",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"India",
@@ -1332,22 +1332,22 @@
   {
     "country":"India",
     "user":"Civil",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"India",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"India",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"India",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"India",
@@ -1382,39 +1382,39 @@
   {
     "country":"India",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"India",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"India",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"India",
     "user":"Government",
-    "purpose":"Remote sensing",
+    "purpose":"Remote_Sensing",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"India",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"India",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"India",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"India",
@@ -1429,17 +1429,17 @@
   {
     "country":"India",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"India",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"India",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Indonesia",
@@ -1469,7 +1469,7 @@
   {
     "country":"Indonesia",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"International",
@@ -1504,7 +1504,7 @@
   {
     "country":"Iran",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Israel",
@@ -1534,32 +1534,32 @@
   {
     "country":"Israel",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Israel",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Israel",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Israel",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Israel",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Israel",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Italy",
@@ -1584,62 +1584,62 @@
   {
     "country":"Italy",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Italy",
     "user":"Military",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Italy",
     "user":"Military",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Italy",
     "user":"Military",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Italy",
     "user":"Civil",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Italy",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Italy",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Italy",
     "user":"Civil",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Italy",
     "user":"Civil",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Italy",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Italy",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Italy",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Japan",
@@ -1729,47 +1729,47 @@
   {
     "country":"Japan",
     "user":"Civil",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Japan",
     "user":"Civil",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Japan",
     "user":"Commercial",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Japan",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Japan",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Japan",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Japan",
     "user":"Civil",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Japan",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Japan",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Japan",
@@ -1824,122 +1824,117 @@
   {
     "country":"Japan",
     "user":"Civil",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Japan",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Japan",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Japan",
     "user":"Civil",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Japan",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Japan",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Japan",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Japan",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Japan",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Japan",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Japan",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Japan",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Japan",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Japan",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Japan",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Japan",
     "user":"Commercial",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Japan",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Japan",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Japan",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Japan",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Japan",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Japan",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Japan",
     "user":"Government",
-    "purpose":"Technology Development"
-  },
-  {
-    "country":"Kazakhstan",
-    "user":"Commercial",
-    "purpose":"Communications"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Kazakhstan",
@@ -1948,13 +1943,18 @@
   },
   {
     "country":"Kazakhstan",
-    "user":"Government",
-    "purpose":"Earth Observation"
+    "user":"Commercial",
+    "purpose":"Communications"
   },
   {
     "country":"Kazakhstan",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
+  },
+  {
+    "country":"Kazakhstan",
+    "user":"Government",
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Luxembourg",
@@ -2064,7 +2064,7 @@
   {
     "country":"Malaysia",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Mexico",
@@ -2099,7 +2099,7 @@
   {
     "country":"Morocco",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Multinational",
@@ -2334,52 +2334,52 @@
   {
     "country":"Multinational",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Multinational",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Multinational",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Multinational",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Multinational",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Multinational",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Multinational",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Multinational",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Multinational",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Multinational",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Netherlands",
@@ -2434,7 +2434,7 @@
   {
     "country":"Netherlands",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Nigeria",
@@ -2444,12 +2444,12 @@
   {
     "country":"Nigeria",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Nigeria",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Norway",
@@ -2469,12 +2469,12 @@
   {
     "country":"Norway",
     "user":"Government",
-    "purpose":"Maritime Tracking"
+    "purpose":"Maritime_Tracking"
   },
   {
     "country":"Norway",
     "user":"Government",
-    "purpose":"Maritime Tracking"
+    "purpose":"Maritime_Tracking"
   },
   {
     "country":"Pakistan",
@@ -2484,17 +2484,17 @@
   {
     "country":"Pakistan",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Pakistan",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Peru",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Russia",
@@ -2834,27 +2834,22 @@
   {
     "country":"Russia",
     "user":"Military",
-    "purpose":"Early Warning"
+    "purpose":"Early_Warning"
   },
   {
     "country":"Russia",
     "user":"Military",
-    "purpose":"Early Warning"
+    "purpose":"Early_Warning"
   },
   {
     "country":"Russia",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Russia",
     "user":"Government",
-    "purpose":"Earth Observation"
-  },
-  {
-    "country":"Russia",
-    "user":"Government",
-    "purpose":"Meteorology"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Russia",
@@ -2868,6 +2863,11 @@
   },
   {
     "country":"Russia",
+    "user":"Government",
+    "purpose":"Meteorology"
+  },
+  {
+    "country":"Russia",
     "user":"Military",
     "purpose":"Navigation"
   },
@@ -3104,17 +3104,17 @@
   {
     "country":"Russia",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Russia",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Russia",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Russia",
@@ -3124,32 +3124,32 @@
   {
     "country":"Russia",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Russia",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Russia",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Russia",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Russia",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Russia",
     "user":"Commercial",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Russia",
@@ -3159,17 +3159,17 @@
   {
     "country":"Russia",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Russia",
     "user":"Commercial",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Russia",
     "user":"Commercial",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Saudi Arabia",
@@ -3199,32 +3199,32 @@
   {
     "country":"Saudi Arabia",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Saudi Arabia",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Saudi Arabia",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Saudi Arabia",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Saudi Arabia",
     "user":"Commercial",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Saudi Arabia",
     "user":"Commercial",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Singapore",
@@ -3234,22 +3234,22 @@
   {
     "country":"Singapore",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Singapore",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Singapore",
     "user":"Commercial",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"South Africa",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"South Korea",
@@ -3264,32 +3264,32 @@
   {
     "country":"South Korea",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"South Korea",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"South Korea",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"South Korea",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"South Korea",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"South Korea",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Spain",
@@ -3344,27 +3344,27 @@
   {
     "country":"Spain",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Spain",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Spain",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Spain",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Spain",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Sweden",
@@ -3374,47 +3374,47 @@
   {
     "country":"Sweden",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"Switzerland",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Switzerland",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Taiwan",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Taiwan",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Taiwan",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Taiwan",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Taiwan",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Taiwan",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Thailand",
@@ -3434,7 +3434,7 @@
   {
     "country":"Thailand",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Turkey",
@@ -3454,27 +3454,27 @@
   {
     "country":"Turkey",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Turkey",
     "user":"Military",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Turkey",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"United Arab Emirates",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"United Arab Emirates",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"United Kingdom",
@@ -3529,22 +3529,22 @@
   {
     "country":"United Kingdom",
     "user":"Commercial",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"United Kingdom",
     "user":"Commercial",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Ukraine",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Ukraine",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"United Arab Emirates",
@@ -3649,22 +3649,22 @@
   {
     "country":"United Kingdom",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"United Kingdom",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"United Kingdom",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Uruguay",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
@@ -5194,107 +5194,107 @@
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Early Warning"
+    "purpose":"Early_Warning"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Early Warning"
+    "purpose":"Early_Warning"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Early Warning"
+    "purpose":"Early_Warning"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Early Warning"
+    "purpose":"Early_Warning"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Early Warning"
+    "purpose":"Early_Warning"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Early Warning"
+    "purpose":"Early_Warning"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"USA",
     "user":"Commercial",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"USA",
     "user":"Commercial",
-    "purpose":"Maritime Tracking"
+    "purpose":"Maritime_Tracking"
   },
   {
     "country":"USA",
     "user":"Commercial",
-    "purpose":"Maritime Tracking"
+    "purpose":"Maritime_Tracking"
   },
   {
     "country":"USA",
@@ -5594,112 +5594,112 @@
   {
     "country":"USA",
     "user":"Commercial",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"USA",
     "user":"Commercial",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"USA",
     "user":"Commercial",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"USA",
     "user":"Commercial",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"USA",
     "user":"Civil",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"USA",
     "user":"Civil",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"USA",
     "user":"Civil",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"USA",
     "user":"Civil",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Scientific Research"
+    "purpose":"Scientific_Research"
   },
   {
     "country":"USA",
@@ -5859,292 +5859,292 @@
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Civil",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Commercial",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Commercial",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Commercial",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Commercial",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Commercial",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Commercial",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Commercial",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Commercial",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Commercial",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Commercial",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Commercial",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Commercial",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Commercial",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Military",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"USA",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   },
   {
     "country":"Venezuela",
@@ -6154,7 +6154,7 @@
   {
     "country":"Venezuela",
     "user":"Government",
-    "purpose":"Remote Sensing"
+    "purpose":"Remote_Sensing"
   },
   {
     "country":"Vietnam",
@@ -6169,11 +6169,11 @@
   {
     "country":"Vietnam",
     "user":"Government",
-    "purpose":"Earth Observation"
+    "purpose":"Earth_Observation"
   },
   {
     "country":"Vietnam",
     "user":"Government",
-    "purpose":"Technology Development"
+    "purpose":"Technology_Development"
   }
 ]

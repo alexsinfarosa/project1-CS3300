@@ -434,5 +434,22 @@ d3.json("dataset.json", function(error, data) {
 
     };
 
+    for (var i = 0; i < data.length; i++) {
+        var rightSideX = d3.select("#" + data[i].country).node().getBBox().x;
+        console.log(d3.select("#" + data[i].country));
+        var rightSideY = d3.select("#" + data[i].country).node().getBBox().y;
+        var leftSideX = d3.select("#" + data[1].purpose).node().getBBox().x;
+        console.log(d3.select("#" + data[2].purpose));
+        //console.log(d3.select("#" + data[i].purpose));
+        //var leftSideY = d3.select("#" + data[i].purpose).node().getBBox().y;
+
+        svg.append("line")
+            .attr("x1",leftSideX)
+            .attr("y1",leftSideY)
+            .attr("x2",rightSideX)
+            .attr("y2",rightSideY)
+            .attr("stroke-width", 2);
+    };
+
 });
 /*-----  End of CIRCLE  ------*/
