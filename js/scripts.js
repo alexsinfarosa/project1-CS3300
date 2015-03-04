@@ -460,10 +460,8 @@ d3.json("dataset.json", function(error, data) {
     //print purposes and rectangles
     for (var i = 0; i < purposes.length; i++) {
         
-        rotation = i*10;
-        rotation -=35;
-        rotation = i * 10;
-        rotation -= 35;
+        rotation = i * 12;
+        rotation -= 40;
         var colors = ["#c51b8a", "#39bb60", "#2c7fb8", "#d95f0e", "#f03b20", "#6a2ff3", "#ba389a", "#f08920", "#18b146", "#57d4f1"]
         //print rectangles
         var leftCircle = svg.append("rect")
@@ -497,9 +495,9 @@ d3.json("dataset.json", function(error, data) {
     for (var i = 0; i < data.length; i++) {
         var circleCoord = d3.select("#" + data[i].country.split(" ")[0]).node().getBoundingClientRect(); //get coordinates of each element on the right side of the circle
         var rectCoord = d3.select("#" + data[i].purpose.split(" ")[0]).node().getBoundingClientRect(); //get coordinates of each element on the left side of the circle
-        var circleX = circleCoord.left-945;
+        var circleX = circleCoord.left-(scrWidth- 960);
         var circleY = circleCoord.bottom-2;
-        var rectX = rectCoord.right-955;
+        var rectX = rectCoord.right-(scrWidth- 950);
         var rectY = rectCoord.bottom-13;
         
         //draw each line
@@ -508,8 +506,8 @@ d3.json("dataset.json", function(error, data) {
             .attr("y1", rectY)
             .attr("x2", circleX)
             .attr("y2", circleY)
-            .style("stroke-width", 1)
-            .style("stroke", "white");
+            .style("stroke-width", 1.3)
+            .style("stroke", colors[purposes.indexOf(data[i].purpose)]);
     };
 
 });
