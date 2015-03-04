@@ -390,10 +390,6 @@ d3.json("dataset.json", function(error, data) {
         };
     };
 
-    //Technology Development is too long of a string, so this shortens it while retaining meaning
-    var index = purposes.indexOf("Technology Development");
-    purposes[index] = "Tech Development";
-
     //height and width variables
     var w = 800,
         h = 825;
@@ -404,10 +400,11 @@ d3.json("dataset.json", function(error, data) {
         .attr("width", w)
         .attr("height", h);
 
-    //print list of countries using svg text
+    //print countries and circles
     for (var i = 0; i < countries.length; i++) {
         rotation = i*3.4;
         rotation-=86;
+        //print circles
         var rightCircle = svg.append("circle")
             .attr("cx", w / 1.15)
             .attr("cy", h / 2)
@@ -416,7 +413,8 @@ d3.json("dataset.json", function(error, data) {
             .attr("transform", function(d) {
                 return "rotate(" + rotation + "," + w / 2 + "," + h / 2 + ")";
             }) //rotating the circles properly
-       
+
+        //print list of countries
         var rightText = svg.append("text")
             .attr("x", 710)
             .attr("y", 417)
@@ -453,7 +451,7 @@ d3.json("dataset.json", function(error, data) {
 
     };
 
-    //print list of purposes using svg text
+    //print purposes and rectangles
     for (var i = 0; i < purposes.length; i++) {
         
         rotation = i*10;
@@ -461,6 +459,7 @@ d3.json("dataset.json", function(error, data) {
         rotation = i * 10;
         rotation -= 35;
         var colors = ["#c51b8a", "#39bb60", "#2c7fb8", "#d95f0e", "#f03b20", "#6a2ff3", "#ba389a", "#f08920", "#18b146", "#57d4f1"]
+        //print rectangles
         var leftCircle = svg.append("rect")
             .attr("x", 128)
             .attr("y", h / 2)
@@ -473,7 +472,7 @@ d3.json("dataset.json", function(error, data) {
                 return colors[i];
             });
 
-
+        //print list of purposes
         var leftText = svg.append("text")
             .attr("x", 122)
             .attr("y", 428)
@@ -488,10 +487,13 @@ d3.json("dataset.json", function(error, data) {
 
     };
 
+    //draw svg lines between countries and purposes
     for (var i = 0; i < data.length; i++) {
         var rightSideX = d3.select("#" + data[i].country.split(" ")[0]).node().getBBox().x;
         var rightSideY = d3.select("#" + data[i].country.split(" ")[0]).node().getBBox().y;
+        console.log(d3.select("#" + data[i].purpose.split(" ")[0]));
         var leftSideX = d3.select("#" + data[i].purpose.split(" ")[0]).node().getBBox().x;
+        
         var leftSideY = d3.select("#" + data[i].purpose.split(" ")[0]).node().getBBox().y;
         
         svg.append("line")
