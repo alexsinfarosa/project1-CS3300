@@ -313,13 +313,10 @@ d3.json("dataset.json", function(err, data) {
         .attr("x", 285)
         .attr("y", 90);
 
-
-
-
 });
 
 
-/*-----  End of HISTOGRAM  ------*/
+/*-----  End of HISTOGRAM AND HORIZONTAL BAR ------*/
 
 
 /*==============================
@@ -345,6 +342,7 @@ d3.json("dataset.json", function(error, data) {
             purposes.push(data[i].purpose);
         };
     };
+
     //Technology Development is too long of a string, so this shortens it while retaining meaning
     var index = purposes.indexOf("Technology Development");
     purposes[index] = "Tech Development";
@@ -352,7 +350,6 @@ d3.json("dataset.json", function(error, data) {
     //height and width variables
     var w = 800,
         h = 825;
-
 
     //create svg element
     var svg = d3.select("#circle")
@@ -362,18 +359,15 @@ d3.json("dataset.json", function(error, data) {
 
     //print list of countries using svg text
     for (var i = 0; i < countries.length; i++) {
-
-        
-
         rotation = i*3.4;
         rotation-=86;
         var rightCircle = svg.append("circle")
             .attr("cx", w/1.15)
             .attr("cy", h/2)
-            .attr("r",5)
-            .attr("fill", "white")
-            
+            .attr("r",3)
+            .attr("fill", "white")         
             .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating the circles properly
+       
         var rightText = svg.append("text")
             .attr("x", 710)
             .attr("y", 417)
@@ -382,32 +376,31 @@ d3.json("dataset.json", function(error, data) {
             .attr("font-size", "12px")
             .attr("fill", "white");
 
-
-
     };
 
     //print list of purposes using svg text
     for (var i = 0; i < purposes.length; i++) {
         
         rotation = i*10;
-        rotation-=35;
+        rotation -=35;
         var colors = ["#c51b8a", "#39bb60", "#2c7fb8", "#d95f0e", "#f03b20","#6a2ff3", "#ba389a", "#f08920", "#18b146", "#57d4f1"]
         var leftCircle = svg.append("rect")
-            .attr("x", 122)
+            .attr("x", 128)
             .attr("y", h/2)
-            .attr("width",5)
-            .attr("height",15)
+            .attr("width",10)
+            .attr("height",25)
             .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating the rectangles properly
             .attr("fill", function(){
                 return colors[i];
             });
+
         var leftText = svg.append("text")
             .attr("x", 120)
             .attr("y", 424)
             .text(purposes[i])
             .attr("text-anchor", "end")
             .attr("fill", "white")
-            .attr("font-size", "14px")
+            .attr("font-size", "12px")
             .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating the text properly;
 
     };

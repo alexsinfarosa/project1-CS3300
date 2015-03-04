@@ -1999,10 +1999,13 @@ h6 {
   font-weight: normal; }
 
 h1 {
-  font-size: 3.375rem;
+  font-size: 4rem;
   line-height: 3.5rem;
   text-transform: uppercase;
   letter-spacing: 2px; }
+
+h2 {
+  font-size: 3.5rem; }
 
 h3 {
   border-bottom: 1px solid;
