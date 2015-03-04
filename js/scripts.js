@@ -275,11 +275,11 @@ d3.json("dataset.json", function(err, data) {
 
     svg.append("text")
         .text("496")
-        .attr("x",15)
-        .attr("y",250)
+        .attr("x", 15)
+        .attr("y", 250)
         .attr("transform", "translate(370,100) rotate(90)")
         .style("fill", "black")
-        .style("font-size","15px");
+        .style("font-size", "15px");
 
     // Russia
     svg.append("path")
@@ -294,11 +294,11 @@ d3.json("dataset.json", function(err, data) {
 
     svg.append("text")
         .text("131")
-        .attr("x",15)
-        .attr("y",208)
+        .attr("x", 15)
+        .attr("y", 208)
         .attr("transform", "translate(370,100) rotate(90)")
         .style("fill", "black")
-        .style("font-size","15px");
+        .style("font-size", "15px");
     // China
     svg.append("path")
         .attr("d", "M 205 100 L 225 60 L 240 60")
@@ -312,11 +312,11 @@ d3.json("dataset.json", function(err, data) {
 
     svg.append("text")
         .text("116")
-        .attr("x",15)
-        .attr("y",173)
+        .attr("x", 15)
+        .attr("y", 173)
         .attr("transform", "translate(370,100) rotate(90)")
         .style("fill", "black")
-        .style("font-size","15px");
+        .style("font-size", "15px");
     // Japan
     svg.append("path")
         .attr("d", "M 232 100 L 242 78 L 257 78")
@@ -330,11 +330,11 @@ d3.json("dataset.json", function(err, data) {
 
     svg.append("text")
         .text("59")
-        .attr("x",15)
-        .attr("y",145)
+        .attr("x", 15)
+        .attr("y", 143)
         .attr("transform", "translate(370,100) rotate(90)")
         .style("fill", "black")
-        .style("font-size","15px");
+        .style("font-size", "15px");
     // All countries
     svg.append("path")
         .attr("d", "M 262 100 L 268 90 L 283 90")
@@ -348,11 +348,17 @@ d3.json("dataset.json", function(err, data) {
 
     svg.append("text")
         .text("433")
-        .attr("x",15)
-        .attr("y",115)
+        .attr("x", 15)
+        .attr("y", 115)
         .attr("transform", "translate(370,100) rotate(90)")
         .style("fill", "black")
-        .style("font-size","15px");
+        .style("font-size", "14px");
+
+    var line = svg.append("g")
+        .append("path")
+        .attr("d", "M3 180 L3 190 L370 190 L370 180")
+        .style("fill", "none")
+        .style("stroke", "white");
 
 });
 
@@ -400,61 +406,68 @@ d3.json("dataset.json", function(error, data) {
 
     //print list of countries using svg text
     for (var i = 0; i < countries.length; i++) {
-        rotation = i*3.4;
-        rotation-=86;
+        rotation = i * 3.4;
+        rotation -= 86;
         var rightCircle = svg.append("circle")
-            .attr("cx", w/1.15)
-            .attr("cy", h/2)
-            .attr("r",3)
-            .attr("fill", "white")         
-            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating the circles properly
-       
+            .attr("cx", w / 1.15)
+            .attr("cy", h / 2)
+            .attr("r", 3)
+            .attr("fill", "white")
+            .attr("transform", function(d) {
+                return "rotate(" + rotation + "," + w / 2 + "," + h / 2 + ")";
+            }) //rotating the circles properly
+
         var rightText = svg.append("text")
             .attr("x", 710)
             .attr("y", 417)
-            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating text properly
+            .attr("transform", function(d) {
+                return "rotate(" + rotation + "," + w / 2 + "," + h / 2 + ")";
+            }) //rotating text properly
             .text(countries[i])
-            .attr("font-size", function(){
-                if(countries[i] == "USA"){
+            .attr("font-size", function() {
+                if (countries[i] == "USA") {
                     return "17px";
-                } else if(countries[i] == "Russia"){
+                } else if (countries[i] == "Russia") {
                     return "17px";
-                } else if(countries[i] == "China"){
+                } else if (countries[i] == "China") {
                     return "17px";
-                } else if(countries[i] == "Japan"){
+                } else if (countries[i] == "Japan") {
                     return "17px";
                 } else {
                     return "12px";
-                }})
-            .attr("fill", function(){
-                if(countries[i] == "USA"){
+                }
+            })
+            .attr("fill", function() {
+                if (countries[i] == "USA") {
                     return "#2c7fb8";
-                } else if(countries[i] == "Russia"){
+                } else if (countries[i] == "Russia") {
                     return "#41b6c4";
-                } else if(countries[i] == "China"){
+                } else if (countries[i] == "China") {
                     return "#a1dab4";
-                } else if(countries[i] == "Japan"){
+                } else if (countries[i] == "Japan") {
                     return "#ffffcc";
                 } else {
                     return "white";
                 }
             });
 
-    }; 
+    };
 
     //print list of purposes using svg text
     for (var i = 0; i < purposes.length; i++) {
-        
-        rotation = i*10;
-        rotation -=35;
-        var colors = ["#c51b8a", "#39bb60", "#2c7fb8", "#d95f0e", "#f03b20","#6a2ff3", "#ba389a", "#f08920", "#18b146", "#57d4f1"]
+
+        rotation = i * 10;
+        rotation -= 35;
+        var colors = ["#c51b8a", "#39bb60", "#2c7fb8", "#d95f0e", "#f03b20", "#6a2ff3", "#ba389a", "#f08920", "#18b146", "#57d4f1"]
         var leftCircle = svg.append("rect")
             .attr("x", 128)
-            .attr("y", h/2)
-            .attr("width",10)
-            .attr("height",25)
-            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating the rectangles properly
-            .attr("fill", function(){
+            .attr("y", h / 2)
+            .attr("width", 10)
+            .attr("height", 25)
+            .attr("transform", function(d) {
+                return "rotate(" + rotation + "," + w / 2 + "," + h / 2 + ")";
+            }) //rotating the rectangles properly
+            .attr("fill", function() {
                 return colors[i];
             });
 
@@ -465,7 +478,9 @@ d3.json("dataset.json", function(error, data) {
             .attr("text-anchor", "end")
             .attr("fill", "white")
             .attr("font-size", "12px")
-            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating the text properly;
+            .attr("transform", function(d) {
+                return "rotate(" + rotation + "," + w / 2 + "," + h / 2 + ")";
+            }) //rotating the text properly;
 
     };
 
