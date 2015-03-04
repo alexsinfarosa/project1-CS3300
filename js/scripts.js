@@ -279,7 +279,7 @@ d3.json("dataset.json", function(err, data) {
         .attr("y",250)
         .attr("transform", "translate(370,100) rotate(90)")
         .style("fill", "black")
-        .style("font-size","20px");
+        .style("font-size","15px");
 
     // Russia
     svg.append("path")
@@ -298,7 +298,7 @@ d3.json("dataset.json", function(err, data) {
         .attr("y",208)
         .attr("transform", "translate(370,100) rotate(90)")
         .style("fill", "black")
-        .style("font-size","20px");
+        .style("font-size","15px");
     // China
     svg.append("path")
         .attr("d", "M 205 100 L 225 60 L 240 60")
@@ -316,7 +316,7 @@ d3.json("dataset.json", function(err, data) {
         .attr("y",173)
         .attr("transform", "translate(370,100) rotate(90)")
         .style("fill", "black")
-        .style("font-size","20px");
+        .style("font-size","15px");
     // Japan
     svg.append("path")
         .attr("d", "M 232 100 L 242 78 L 257 78")
@@ -334,7 +334,7 @@ d3.json("dataset.json", function(err, data) {
         .attr("y",145)
         .attr("transform", "translate(370,100) rotate(90)")
         .style("fill", "black")
-        .style("font-size","20px");
+        .style("font-size","15px");
     // All countries
     svg.append("path")
         .attr("d", "M 262 100 L 268 90 L 283 90")
@@ -352,7 +352,7 @@ d3.json("dataset.json", function(err, data) {
         .attr("y",115)
         .attr("transform", "translate(370,100) rotate(90)")
         .style("fill", "black")
-        .style("font-size","20px");
+        .style("font-size","15px");
 
 });
 
