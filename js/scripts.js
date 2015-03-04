@@ -306,7 +306,7 @@ d3.json("dataset.json", function(error, data) {
 
     //height and width variables
     var w = 800,
-        h = 800;
+        h = 825;
 
 
     //create svg element
