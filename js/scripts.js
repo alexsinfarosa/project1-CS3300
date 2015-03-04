@@ -185,11 +185,11 @@ d3.json("dataset.json", function(err, data) {
         }],
         [{
             x: 1,
-            y: 59 // China
+            y: 59 // Japan
         }],
         [{
             x: 2,
-            y: 116 // Japan
+            y: 116 // China
         }],
         [{
             x: 3,
@@ -210,7 +210,7 @@ d3.json("dataset.json", function(err, data) {
     //Set up scales
     var xScale = d3.scale.ordinal()
         .domain(d3.range(dataset[0].length))
-        .rangeRoundBands([margin.left, width / 6], 0.05);
+        .rangeRoundBands([0, width / 6]);
 
     var yScale = d3.scale.linear()
         .domain([0,
@@ -223,13 +223,13 @@ d3.json("dataset.json", function(err, data) {
         .rangeRound([0, height * 2.3]);
 
     //Easy colors accessible via a 10-step ordinal scale
-    var colors = d3.scale.category20();
-    // var colors = ["#c51b8a", "#31a354", "#2c7fb8", "#d95f0e", "#f03b20"];
+    // var colors = d3.scale.category20c();
+    var colors = ["#2c7fb8", "#ffffcc", "#a1dab4", "#41b6c4", "#253494"];
 
     var svg = d3.select("#countries")
         .append("svg")
-        .attr("width", width + 100 + margin.left + margin.right)
-        .attr("height", height + 100 + margin.top + margin.bottom)
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
@@ -239,9 +239,9 @@ d3.json("dataset.json", function(err, data) {
         .enter()
         .append("g")
         .style("fill", function(d, i) {
-            return colors(i);
+            return colors[i];
         })
-        .attr("transform", "translate(400,100) rotate(90)");
+        .attr("transform", "translate(370,100) rotate(90)");
 
     // Add a rect for each data value
     var rects = groups.selectAll("rect")
@@ -261,15 +261,60 @@ d3.json("dataset.json", function(err, data) {
         })
         .attr("width", xScale.rangeBand());
 
-    // LABELS
-    var lineFunction = d3.svg.line()
-        .x(function(d) {
-            return d.x;
-        })
-        .y(function(d) {
-            return d.y;
-        })
-        .interpolate("linear");
+    // LABELS 
+    // USA
+    svg.append("path")
+        .attr("d", "M 125 100 L 165 20 L 180 20")
+        .style("fill", "none")
+        .style("stroke", "white");
+
+    svg.append("text")
+        .text("USA")
+        .attr("x", 182)
+        .attr("y", 20);
+    // Russia
+    svg.append("path")
+        .attr("d", "M 170 100 L 200 40 L 215 40")
+        .style("fill", "none")
+        .style("stroke", "white");
+
+    svg.append("text")
+        .text("RUSSIA")
+        .attr("x", 217)
+        .attr("y", 40);
+    // China
+    svg.append("path")
+        .attr("d", "M 205 100 L 225 60 L 240 60")
+        .style("fill", "none")
+        .style("stroke", "white");
+
+    svg.append("text")
+        .text("CHINA")
+        .attr("x", 242)
+        .attr("y", 60);
+    // Japan
+    svg.append("path")
+        .attr("d", "M 232 100 L 242 78 L 257 78")
+        .style("fill", "none")
+        .style("stroke", "white");
+
+    svg.append("text")
+        .text("JAPAN")
+        .attr("x", 259)
+        .attr("y", 78);
+    // All countries
+    svg.append("path")
+        .attr("d", "M 262 100 L 268 90 L 283 90")
+        .style("fill", "none")
+        .style("stroke", "white");
+
+    svg.append("text")
+        .text("OTHER COUNTRIES")
+        .attr("x", 285)
+        .attr("y", 90);
+
+
+
 
 });
 
@@ -301,8 +346,8 @@ d3.json("dataset.json", function(error, data) {
         };
     };
     //Technology Development is too long of a string, so this shortens it while retaining meaning
-    var index=purposes.indexOf("Technology Development");
-    purposes[index]="Tech Development";
+    var index = purposes.indexOf("Technology Development");
+    purposes[index] = "Tech Development";
 
 
     var w = 800,
@@ -339,29 +384,33 @@ d3.json("dataset.json", function(error, data) {
                 return "rotate(" + rotation + "," + w / 2 + "," + h / 2 + ")";
             })
 
-        rotation = i*3.4;
-        rotation-=86;
+        rotation = i * 3.4;
+        rotation -= 86;
         svg.append("text")
-            .attr("x", w/1.15)
-            .attr("y", h/2)
+            .attr("x", w / 1.15)
+            .attr("y", h / 2)
             .attr("fill", "white")
             .attr("font-size", "12px")
-            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating text properly
+            .attr("transform", function(d) {
+                return "rotate(" + rotation + "," + w / 2 + "," + h / 2 + ")";
+            }) //rotating text properly
 
-            .text(countries[i]);
+        .text(countries[i]);
     };
 
     //print list of purposes using svg text
     for (var i = 0; i < purposes.length; i++) {
-        rotation = i*10;
-        rotation-=35;
+        rotation = i * 10;
+        rotation -= 35;
         svg.append("text")
             .attr("x", 150)
-            .attr("y", h/2)
+            .attr("y", h / 2)
             .attr("text-anchor", "end")
             .attr("fill", "white")
             .attr("font-size", "14px")
-            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating text properly
+            .attr("transform", function(d) {
+                return "rotate(" + rotation + "," + w / 2 + "," + h / 2 + ")";
+            }) //rotating text properly
             .text(purposes[i]);
     };
 
