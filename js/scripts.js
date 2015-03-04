@@ -349,19 +349,9 @@ d3.json("dataset.json", function(error, data) {
     var index = purposes.indexOf("Technology Development");
     purposes[index] = "Tech Development";
 
-
-    var w = 800,
-        h = 800;
-
-
-    var svg = d3.select("#circle")
-        .append("svg")
-        .attr("width", w)
-        .attr("height", h);
-
     //height and width variables
-    var w = 1000,
-        h = 1000;
+    var w = 800,
+        h = 825;
 
 
     //create svg element
@@ -372,6 +362,7 @@ d3.json("dataset.json", function(error, data) {
 
     //print list of countries using svg text
     for (var i = 0; i < countries.length; i++) {
+<<<<<<< HEAD
 
         rotation = i * 3.2;
         rotation -= 90;
@@ -396,10 +387,32 @@ d3.json("dataset.json", function(error, data) {
             }) //rotating text properly
 
         .text(countries[i]);
+=======
+        rotation = i*3.4;
+        rotation-=86;
+        var rightCircle = svg.append("circle")
+            .attr("cx", w/1.15)
+            .attr("cy", h/2)
+            .attr("r",5)
+            .attr("fill", "white")
+            
+            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating the circles properly
+        var rightText = svg.append("text")
+            .attr("x", 710)
+            .attr("y", 417)
+            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating text properly
+            .text(countries[i])
+            .attr("font-size", "12px")
+            .attr("fill", "white");
+
+
+
+>>>>>>> origin/master
     };
 
     //print list of purposes using svg text
     for (var i = 0; i < purposes.length; i++) {
+<<<<<<< HEAD
         rotation = i * 10;
         rotation -= 35;
         svg.append("text")
@@ -412,6 +425,28 @@ d3.json("dataset.json", function(error, data) {
                 return "rotate(" + rotation + "," + w / 2 + "," + h / 2 + ")";
             }) //rotating text properly
             .text(purposes[i]);
+=======
+        rotation = i*10;
+        rotation-=35;
+        var colors = ["#c51b8a", "#39bb60", "#2c7fb8", "#d95f0e", "#f03b20","#6a2ff3", "#ba389a", "#f08920", "#18b146", "#57d4f1"]
+        var leftCircle = svg.append("rect")
+            .attr("x", 122)
+            .attr("y", h/2)
+            .attr("width",5)
+            .attr("height",15)
+            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating the rectangles properly
+            .attr("fill", function(){
+                return colors[i];
+            });
+        var leftText = svg.append("text")
+            .attr("x", 120)
+            .attr("y", 424)
+            .text(purposes[i])
+            .attr("text-anchor", "end")
+            .attr("fill", "white")
+            .attr("font-size", "14px")
+            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating the text properly;
+>>>>>>> origin/master
     };
 
 });
