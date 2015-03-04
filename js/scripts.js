@@ -362,7 +362,6 @@ d3.json("dataset.json", function(error, data) {
 
     //print list of countries using svg text
     for (var i = 0; i < countries.length; i++) {
-<<<<<<< HEAD
 
         rotation = i * 3.2;
         rotation -= 90;
@@ -387,7 +386,6 @@ d3.json("dataset.json", function(error, data) {
             }) //rotating text properly
 
         .text(countries[i]);
-=======
         rotation = i*3.4;
         rotation-=86;
         var rightCircle = svg.append("circle")
@@ -407,12 +405,10 @@ d3.json("dataset.json", function(error, data) {
 
 
 
->>>>>>> origin/master
     };
 
     //print list of purposes using svg text
     for (var i = 0; i < purposes.length; i++) {
-<<<<<<< HEAD
         rotation = i * 10;
         rotation -= 35;
         svg.append("text")
@@ -425,7 +421,6 @@ d3.json("dataset.json", function(error, data) {
                 return "rotate(" + rotation + "," + w / 2 + "," + h / 2 + ")";
             }) //rotating text properly
             .text(purposes[i]);
-=======
         rotation = i*10;
         rotation-=35;
         var colors = ["#c51b8a", "#39bb60", "#2c7fb8", "#d95f0e", "#f03b20","#6a2ff3", "#ba389a", "#f08920", "#18b146", "#57d4f1"]
@@ -446,7 +441,7 @@ d3.json("dataset.json", function(error, data) {
             .attr("fill", "white")
             .attr("font-size", "14px")
             .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating the text properly;
->>>>>>> origin/master
+
     };
 
 });
