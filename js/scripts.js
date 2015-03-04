@@ -295,8 +295,8 @@ d3.json("dataset.json", function(error, data) {
 
     //print list of countries using svg text
     for (var i = 0; i < countries.length; i++) {
-        rotation = i*3.2;
-        rotation-=75;
+        rotation = i*3.6;
+        rotation-=85;
         svg.append("text")
             .attr("x", w/1.2)
             .attr("y", h/2)
