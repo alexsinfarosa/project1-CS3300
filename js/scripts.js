@@ -224,7 +224,7 @@ d3.json("dataset.json", function(err, data) {
 
     //Easy colors accessible via a 10-step ordinal scale
     // var colors = d3.scale.category20c();
-    var colors = ["#2c7fb8", "#ffffcc", "#a1dab4", "#41b6c4", "#253494"];
+    var colors = ["#ffffcc", "#2c7fb8", "#a1dab4", "#41b6c4", "#253494"];
 
     var svg = d3.select("#countries")
         .append("svg")
@@ -445,7 +445,7 @@ d3.json("dataset.json", function(error, data) {
                 } else if (countries[i] == "China") {
                     return "#a1dab4";
                 } else if (countries[i] == "Japan") {
-                    return "#ffffcc";
+                    return "#2c7fb8";
                 } else {
                     return "white";
                 }
