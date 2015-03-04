@@ -3,7 +3,7 @@
 =================================*/
 
 // Load and parse data
-d3.json("dataset.json", function(err, data) { 
+d3.json("dataset.json", function(err, data) {
 
     // Create array of "users" only
     var users = data.map(function(i) {
@@ -148,7 +148,7 @@ d3.json("dataset.json", function(err, data) {
         })
         .attr("text-anchor", "middle");
 
-        // THE HORIZONTAL BAR---------------------------------------------------------------------------
+    // THE HORIZONTAL BAR---------------------------------------------------------------------------
 
     // Create array of "countries" only
     var countries = data.map(function(i) {
@@ -162,12 +162,10 @@ d3.json("dataset.json", function(err, data) {
             objectCountries[countries[i]] = 0;
         ++objectCountries[countries[i]];
     }
-    console.log(objectCountries);
 
     // Create an array with the keys
     var countryKeys;
     countryKeys = Object.keys(objectCountries);
-    console.log(countryKeys);
 
     // Create an array with the properties
     var countryProperties = [];
@@ -176,38 +174,30 @@ d3.json("dataset.json", function(err, data) {
             countryProperties.push(objectCountries[key]);
         }
     }
-    console.log(countryProperties);
-
-    // var svg = d3.select("#countries")
-    //     .append("svg")
-    //     .attr("width", width + margin.left + margin.right)
-    //     .attr("height", height + margin.top + margin.bottom)
-    //     .append("g")
-    //     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     // X scale 
     var topCountries = ["USA", "Russia", "China", "Japan", "Others"];
-    var numSatellites = [496, 131, 59, 116, 433];
+    var numSatellites = [433, 59, 116, 131, 496];
     var dataset = [
         [{
             x: 0,
-            y: 496
+            y: 433 // All other countries combined
         }],
         [{
             x: 1,
-            y: 131
+            y: 59 // China
         }],
         [{
             x: 2,
-            y: 59
+            y: 116 // Japan
         }],
         [{
             x: 3,
-            y: 116
+            y: 131 // Russia
         }],
         [{
             x: 4,
-            y: 433
+            y: 496 // USA
         }]
     ];
 
@@ -230,7 +220,7 @@ d3.json("dataset.json", function(err, data) {
                 });
             })
         ])
-        .range([0, height * 1.5]);
+        .rangeRound([0, height * 2.3]);
 
     //Easy colors accessible via a 10-step ordinal scale
     var colors = d3.scale.category20();
@@ -238,7 +228,7 @@ d3.json("dataset.json", function(err, data) {
 
     var svg = d3.select("#countries")
         .append("svg")
-        .attr("width", width + margin.left + margin.right)
+        .attr("width", width + 100 + margin.left + margin.right)
         .attr("height", height + 100 + margin.top + margin.bottom)
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -250,7 +240,36 @@ d3.json("dataset.json", function(err, data) {
         .append("g")
         .style("fill", function(d, i) {
             return colors(i);
-        });
+        })
+        .attr("transform", "translate(400,100) rotate(90)");
+
+    // Add a rect for each data value
+    var rects = groups.selectAll("rect")
+        .data(function(d) {
+            return d;
+        })
+        .enter()
+        .append("rect")
+        .attr("x", function(d, i) {
+            return xScale(i);
+        })
+        .attr("y", function(d) {
+            return yScale(d.y0);
+        })
+        .attr("height", function(d) {
+            return yScale(d.y);
+        })
+        .attr("width", xScale.rangeBand());
+
+    // LABELS
+    var lineFunction = d3.svg.line()
+        .x(function(d) {
+            return d.x;
+        })
+        .y(function(d) {
+            return d.y;
+        })
+        .interpolate("linear");
 
 });
 
@@ -264,18 +283,18 @@ d3.json("dataset.json", function(err, data) {
 
 
 d3.json("dataset.json", function(error, data) {
-    var countries=[];
-    var purposes=[];
+    var countries = [];
+    var purposes = [];
     var rotation;
 
     for (var i = 0; i < data.length; i++) {
-        if (countries.indexOf(data[i].country)==-1) {
+        if (countries.indexOf(data[i].country) == -1) {
             countries.push(data[i].country);
         };
     };
 
     for (var i = 0; i < data.length; i++) {
-        if (purposes.indexOf(data[i].purpose)==-1) {
+        if (purposes.indexOf(data[i].purpose) == -1) {
             purposes.push(data[i].purpose);
         };
     };
@@ -284,21 +303,23 @@ d3.json("dataset.json", function(error, data) {
         h = 800;
 
 
-var svg = d3.select("#circle")
-    .append("svg")
-    .attr("width", w)
-    .attr("height", h);
+    var svg = d3.select("#circle")
+        .append("svg")
+        .attr("width", w)
+        .attr("height", h);
 
 
     for (var i = 0; i < countries.length; i++) {
-        rotation = i*3.2;
-        rotation-=90;
+        rotation = i * 3.2;
+        rotation -= 90;
         svg.append("text")
-            .attr("x", w/1.2)
-            .attr("y", h/2)
+            .attr("x", w / 1.2)
+            .attr("y", h / 2)
             .attr("fill", "white")
             .attr("font-size", "12px")
-            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; })
+            .attr("transform", function(d) {
+                return "rotate(" + rotation + "," + w / 2 + "," + h / 2 + ")";
+            })
             .text(countries[i]);
     };
 });
