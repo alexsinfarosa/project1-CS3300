@@ -418,8 +418,8 @@ d3.json("dataset.json", function(error, data) {
             });
 
         var leftText = svg.append("text")
-            .attr("x", 120)
-            .attr("y", 424)
+            .attr("x", 122)
+            .attr("y", 428)
             .text(purposes[i])
             .attr("text-anchor", "end")
             .attr("fill", "white")
