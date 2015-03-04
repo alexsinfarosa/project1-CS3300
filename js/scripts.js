@@ -373,8 +373,31 @@ d3.json("dataset.json", function(error, data) {
             .attr("y", 417)
             .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating text properly
             .text(countries[i])
-            .attr("font-size", "12px")
-            .attr("fill", "white");
+            .attr("font-size", function(){
+                if(countries[i] == "USA"){
+                    return "15px";
+                } else if(countries[i] == "Russia"){
+                    return "15px";
+                } else if(countries[i] == "China"){
+                    return "15px";
+                } else if(countries[i] == "Japan"){
+                    return "15px";
+                } else {
+                    return "12px";
+                }})
+            .attr("fill", function(){
+                if(countries[i] == "USA"){
+                    return "#2c7fb8";
+                } else if(countries[i] == "Russia"){
+                    return "#ffffcc";
+                } else if(countries[i] == "China"){
+                    return "#a1dab4";
+                } else if(countries[i] == "Japan"){
+                    return "#41b6c4";
+                } else {
+                    return "white";
+                }
+            });
 
     };
 
