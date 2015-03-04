@@ -382,30 +382,30 @@ d3.json("dataset.json", function(error, data) {
             .attr("id", countries[i].split(" ")[0])
             .attr("font-size", function(){
                 if(countries[i] == "USA"){
-                    return "15px";
+                    return "17px";
                 } else if(countries[i] == "Russia"){
-                    return "15px";
+                    return "17px";
                 } else if(countries[i] == "China"){
-                    return "15px";
+                    return "17px";
                 } else if(countries[i] == "Japan"){
-                    return "15px";
+                    return "17px";
                 } else {
                     return "12px";
                 }})
             .attr("fill", function(){
                 if(countries[i] == "USA"){
-                    return "#2c7fb8";
+                    return "#2C7FB8";
                 } else if(countries[i] == "Russia"){
-                    return "#ffffcc";
+                    return "#00B9C5";
                 } else if(countries[i] == "China"){
                     return "#a1dab4";
                 } else if(countries[i] == "Japan"){
-                    return "#41b6c4";
+                    return "#ffffcc";
                 } else {
                     return "white";
                 }
             });
-
+"#2c7fb8", "#ffffcc", "#a1dab4", "#41b6c4", "#253494"
     };
 
     //print list of purposes using svg text
