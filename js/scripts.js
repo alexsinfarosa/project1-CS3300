@@ -281,11 +281,13 @@ d3.json("dataset.json", function(error, data) {
             purposes.push(data[i].purpose);
         };
     };
+    //Technology Development is too long of a string, so this shortens it while retaining meaning
     var index=purposes.indexOf("Technology Development");
     purposes[index]="Tech Development";
 
-    var w = 800,
-        h = 800;
+    //height and width variables
+    var w = 1000,
+        h = 1000;
 
     //create svg element
     var svg = d3.select("#circle")
@@ -298,11 +300,11 @@ d3.json("dataset.json", function(error, data) {
         rotation = i*3.4;
         rotation-=86;
         svg.append("text")
-            .attr("x", w/1.2)
+            .attr("x", w/1.15)
             .attr("y", h/2)
             .attr("fill", "white")
             .attr("font-size", "12px")
-            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; })
+            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating text properly
             .text(countries[i]);
     };
 
@@ -311,12 +313,12 @@ d3.json("dataset.json", function(error, data) {
         rotation = i*10;
         rotation-=35;
         svg.append("text")
-            .attr("x", 130)
+            .attr("x", 150)
             .attr("y", h/2)
             .attr("text-anchor", "end")
             .attr("fill", "white")
             .attr("font-size", "14px")
-            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; })
+            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating text properly
             .text(purposes[i]);
     };
 
