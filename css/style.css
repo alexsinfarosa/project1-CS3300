@@ -2004,6 +2004,10 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 2px; }
 
+h3 {
+  border-bottom: 1px solid;
+  width: 40%; }
+
 h6 {
   font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
