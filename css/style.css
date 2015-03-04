@@ -1985,7 +1985,8 @@ body {
   background: #FAFAFA; }
 
 main {
-  background: #3A3A3C; }
+  background: #3A3A3C;
+  width: 95%; }
 
 h1,
 h2,
