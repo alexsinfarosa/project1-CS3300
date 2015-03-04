@@ -379,6 +379,7 @@ d3.json("dataset.json", function(error, data) {
             .attr("y", 417)
             .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating text properly
             .text(countries[i])
+            .attr("id", countries[i])
             .attr("font-size", function(){
                 if(countries[i] == "USA"){
                     return "15px";
@@ -430,7 +431,9 @@ d3.json("dataset.json", function(error, data) {
             .attr("text-anchor", "end")
             .attr("fill", "white")
             .attr("font-size", "12px")
+            .attr("id", purposes[i])
             .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating the text properly;
+
 
     };
 
