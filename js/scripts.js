@@ -281,24 +281,30 @@ d3.json("dataset.json", function(err, data) {
 =            CIRCLE            =
 ==============================*/
 
-
+//Load and parse data
 d3.json("dataset.json", function(error, data) {
     var countries = [];
     var purposes = [];
     var rotation;
 
+    //creating array of countries
     for (var i = 0; i < data.length; i++) {
         if (countries.indexOf(data[i].country) == -1) {
             countries.push(data[i].country);
         };
     };
 
+    //creating array of purposes
     for (var i = 0; i < data.length; i++) {
         if (purposes.indexOf(data[i].purpose) == -1) {
             purposes.push(data[i].purpose);
         };
     };
+    //Technology Development is too long of a string, so this shortens it while retaining meaning
+    var index=purposes.indexOf("Technology Development");
+    purposes[index]="Tech Development";
 
+<<<<<<< HEAD
     var w = 800,
         h = 800;
 
@@ -307,9 +313,21 @@ d3.json("dataset.json", function(error, data) {
         .append("svg")
         .attr("width", w)
         .attr("height", h);
+=======
+    //height and width variables
+    var w = 1000,
+        h = 1000;
+>>>>>>> origin/master
 
+    //create svg element
+    var svg = d3.select("#circle")
+        .append("svg")
+        .attr("width", w)
+        .attr("height", h);
 
+    //print list of countries using svg text
     for (var i = 0; i < countries.length; i++) {
+<<<<<<< HEAD
         rotation = i * 3.2;
         rotation -= 90;
         svg.append("text")
@@ -320,7 +338,32 @@ d3.json("dataset.json", function(error, data) {
             .attr("transform", function(d) {
                 return "rotate(" + rotation + "," + w / 2 + "," + h / 2 + ")";
             })
+=======
+        rotation = i*3.4;
+        rotation-=86;
+        svg.append("text")
+            .attr("x", w/1.15)
+            .attr("y", h/2)
+            .attr("fill", "white")
+            .attr("font-size", "12px")
+            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating text properly
+>>>>>>> origin/master
             .text(countries[i]);
     };
+
+    //print list of purposes using svg text
+    for (var i = 0; i < purposes.length; i++) {
+        rotation = i*10;
+        rotation-=35;
+        svg.append("text")
+            .attr("x", 150)
+            .attr("y", h/2)
+            .attr("text-anchor", "end")
+            .attr("fill", "white")
+            .attr("font-size", "14px")
+            .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating text properly
+            .text(purposes[i]);
+    };
+
 });
 /*-----  End of CIRCLE  ------*/
