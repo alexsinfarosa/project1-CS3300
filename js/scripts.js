@@ -350,8 +350,8 @@ d3.json("dataset.json", function(error, data) {
     };
 
     //Technology Development is too long of a string, so this shortens it while retaining meaning
-    var index = purposes.indexOf("Technology Development");
-    purposes[index] = "Tech Development";
+    //var index = purposes.indexOf("Technology Development");
+    //purposes[index] = "Tech Development";
 
     //height and width variables
     var w = 800,
@@ -379,7 +379,7 @@ d3.json("dataset.json", function(error, data) {
             .attr("y", 417)
             .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating text properly
             .text(countries[i])
-            .attr("id", countries[i])
+            .attr("id", countries[i].split(" ")[0])
             .attr("font-size", function(){
                 if(countries[i] == "USA"){
                     return "15px";
@@ -431,27 +431,24 @@ d3.json("dataset.json", function(error, data) {
             .attr("text-anchor", "end")
             .attr("fill", "white")
             .attr("font-size", "12px")
-            .attr("id", purposes[i])
+            .attr("id", purposes[i].split(" ")[0])
             .attr("transform", function(d) { return "rotate("+rotation +","+ w/2 +","+ h/2 +")"; }) //rotating the text properly;
 
 
     };
 
     for (var i = 0; i < data.length; i++) {
-        var rightSideX = d3.select("#" + data[i].country).node().getBBox().x;
-        console.log(d3.select("#" + data[i].country));
-        var rightSideY = d3.select("#" + data[i].country).node().getBBox().y;
-        var leftSideX = d3.select("#" + data[1].purpose).node().getBBox().x;
-        console.log(d3.select("#" + data[2].purpose));
-        //console.log(d3.select("#" + data[i].purpose));
-        //var leftSideY = d3.select("#" + data[i].purpose).node().getBBox().y;
-
+        var rightSideX = d3.select("#" + data[i].country.split(" ")[0]).node().getBBox().x;
+        var rightSideY = d3.select("#" + data[i].country.split(" ")[0]).node().getBBox().y;
+        var leftSideX = d3.select("#" + data[i].purpose.split(" ")[0]).node().getBBox().x;
+        var leftSideY = d3.select("#" + data[i].purpose.split(" ")[0]).node().getBBox().y;
         svg.append("line")
             .attr("x1",leftSideX)
             .attr("y1",leftSideY)
             .attr("x2",rightSideX)
             .attr("y2",rightSideY)
-            .attr("stroke-width", 2);
+            .style("stroke-width", 2)
+            .style("stroke", "white");
     };
 
 });
