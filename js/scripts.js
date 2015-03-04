@@ -390,6 +390,10 @@ d3.json("dataset.json", function(error, data) {
         };
     };
 
+    //Technology Development is too long of a string, so this shortens it while retaining meaning
+    var index = purposes.indexOf("Technology Development");
+    purposes[index] = "Tech Development";
+
     //height and width variables
     var w = 800,
         h = 825;
@@ -489,19 +493,19 @@ d3.json("dataset.json", function(error, data) {
 
     //draw svg lines between countries and purposes
     for (var i = 0; i < data.length; i++) {
-        var rightSideX = d3.select("#" + data[i].country.split(" ")[0]).node().getBBox().x;
-        var rightSideY = d3.select("#" + data[i].country.split(" ")[0]).node().getBBox().y;
-        console.log(d3.select("#" + data[i].purpose.split(" ")[0]));
-        var leftSideX = d3.select("#" + data[i].purpose.split(" ")[0]).node().getBBox().x;
-        
-        var leftSideY = d3.select("#" + data[i].purpose.split(" ")[0]).node().getBBox().y;
+        var rightSideRect = d3.select("#" + data[i].country.split(" ")[0]).node().getBoundingClientRect();
+        var leftSideRect = d3.select("#" + data[i].purpose.split(" ")[0]).node().getBoundingClientRect();
+        var rightSideX = rightSideRect.left-950;
+        var rightSideY = rightSideRect.bottom+30;
+        var leftSideX = leftSideRect.right-950;
+        var leftSideY = leftSideRect.bottom+30;
         
         svg.append("line")
             .attr("x1", leftSideX)
             .attr("y1", leftSideY)
             .attr("x2", rightSideX)
             .attr("y2", rightSideY)
-            .style("stroke-width", 2)
+            .style("stroke-width", 1)
             .style("stroke", "white");
     };
 
