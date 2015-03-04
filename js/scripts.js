@@ -272,6 +272,14 @@ d3.json("dataset.json", function(err, data) {
         .text("USA")
         .attr("x", 182)
         .attr("y", 20);
+
+    svg.append("text")
+        .text("496")
+        .attr("x",15)
+        .attr("y",250)
+        .attr("transform", "translate(370,100) rotate(90)")
+        .style("fill", "black")
+        .style("font-size","14px");
     // Russia
     svg.append("path")
         .attr("d", "M 170 100 L 200 40 L 215 40")
@@ -282,6 +290,14 @@ d3.json("dataset.json", function(err, data) {
         .text("RUSSIA")
         .attr("x", 217)
         .attr("y", 40);
+
+    svg.append("text")
+        .text("131")
+        .attr("x",15)
+        .attr("y",208)
+        .attr("transform", "translate(370,100) rotate(90)")
+        .style("fill", "black")
+        .style("font-size","14px");
     // China
     svg.append("path")
         .attr("d", "M 205 100 L 225 60 L 240 60")
@@ -292,6 +308,14 @@ d3.json("dataset.json", function(err, data) {
         .text("CHINA")
         .attr("x", 242)
         .attr("y", 60);
+
+    svg.append("text")
+        .text("116")
+        .attr("x",15)
+        .attr("y",173)
+        .attr("transform", "translate(370,100) rotate(90)")
+        .style("fill", "black")
+        .style("font-size","14px");
     // Japan
     svg.append("path")
         .attr("d", "M 232 100 L 242 78 L 257 78")
@@ -302,6 +326,14 @@ d3.json("dataset.json", function(err, data) {
         .text("JAPAN")
         .attr("x", 259)
         .attr("y", 78);
+
+    svg.append("text")
+        .text("59")
+        .attr("x",15)
+        .attr("y",145)
+        .attr("transform", "translate(370,100) rotate(90)")
+        .style("fill", "black")
+        .style("font-size","14px");
     // All countries
     svg.append("path")
         .attr("d", "M 262 100 L 268 90 L 283 90")
@@ -312,6 +344,14 @@ d3.json("dataset.json", function(err, data) {
         .text("OTHER COUNTRIES")
         .attr("x", 285)
         .attr("y", 90);
+
+    svg.append("text")
+        .text("433")
+        .attr("x",15)
+        .attr("y",115)
+        .attr("transform", "translate(370,100) rotate(90)")
+        .style("fill", "black")
+        .style("font-size","14px");
 
     var line = svg.append("g")
         .append("path")
